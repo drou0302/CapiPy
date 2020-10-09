@@ -36,11 +36,11 @@ while True:
                      [sg.Checkbox('Yes'), sg.Text('Enter the name:'), sg.Input()],
                      [sg.Checkbox('No'), sg.Text('Enter the location:'), sg.Input()],
                      [sg.Text('Please enter your protein sequence: ', font =('Helvetica', 10, 'bold'))],
-                     [sg.Multiline(size=(80, 10))],
+                     [sg.Multiline(size=(100, 10))],
                      [sg.Text('How do you want to run BLAST?', font =('Helvetica', 10, 'bold'))],
                      [sg.Checkbox('LOCAL'), sg.Checkbox('WEB')],
                      [sg.Text('OUTPUT:', font =('Helvetica', 10, 'bold'))],
-                     [sg.Output(key='-output-', size=(80, 20))],
+                     [sg.Output(key='-output-', size=(100, 20))],
                      [sg.Button('Run'), sg.Button('Exit')]]
         window_m1 = sg.Window('Blast and Modeller', layout_m1)
         while True: 
@@ -49,6 +49,7 @@ while True:
             if event_m1 in (None, 'Exit'):
                 break
             elif event_m1 == 'Run':
+                window_m1['-output-'].Update('')
                 if values_m1[0] is True and values_m1[2] is False:
                     folder_answer = "YES"
                     folder_name = values_m1[1]
@@ -101,6 +102,7 @@ while True:
             if event_m1_1 in (None, 'Exit'):
                 break
             elif event_m1_1 == 'Run':
+                window_m1_1['-output-'].Update('')
                 checks = []
                 if values_m1_1[0] != '':
                     folder_name = values_m1_1[0]
@@ -151,6 +153,7 @@ while True:
             if event_m2 in (None, 'Exit'):
                 break
             elif event_m2 == 'Run':
+                window_m2['-output-'].Update('')
                 checks = []
                 if values_m2[0] is True and values_m2[2] is False:
                     folder_answer = "NO"
@@ -214,6 +217,7 @@ while True:
             if event_m3 in (None, 'Exit'):
                 break
             elif event_m3 == 'Run':
+                window_m3['-output-'].Update('')
                 checks = []
                 if values_m3[0] is True and values_m3[2] is False:
                     folder_answer = "NO"
@@ -322,6 +326,8 @@ while True:
         layout_m4 = [[sg.Text('Enter the folder name. You can enter an already existing folder name or '
                               'create a new one.', font =('Helvetica', 10, 'bold'))],
                      [sg.Input()],
+                     [sg.Text('Do you want to use the same query as in the other modules?',
+                              font =('Helvetica', 10, 'bold'))],
                      [sg.Checkbox('Yes'), sg.Checkbox('No')],
                      [sg.Text('If not, please copy your sequence here:')],
                      [sg.Multiline(size=(80, 5))],
@@ -334,6 +340,7 @@ while True:
             if event_m4 in (None, 'Exit'):
                 break
             elif event_m4 == 'Run':
+                window_m4['-output-'].Update('')
                 checks = []
                 if len(values_m4[0]) > 0:
                     folder_name = values_m4[0]
