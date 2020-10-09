@@ -84,7 +84,7 @@ def main(folder_answer, folder_name, pdbfile, active_site):
     print("Your protein, formed by " + str(number_of_chains) + " chains, has an aproximate dimensions of: "
           + str(box_dimensions[0]) + " A, " + str(box_dimensions[1]) + " A, " + str(box_dimensions[2]) +
           " A.\nGiving an aproximate volume of: " + str(volume) + " A\u00b3\n")
-    time.sleep(2)
+    time.sleep(3)
     # Sort the amino acids of the structure depending on their exposure calculated by the half-sphere exposure method
     # - 10.1093/bioinformatics/btv665
     print("Calculating the exposure of each residue in the structure...")
@@ -140,8 +140,7 @@ def main(folder_answer, folder_name, pdbfile, active_site):
     for aa in aa_s2_perc:
         print(aa + "\t\t" + aa_s2_perc[aa] + "\t\t" + str(aa_n[aa]))
 
-    print("Total number of surface residues: " + str(len(exposed)) + " out of " + str(len(exposed) + len(semiburied)
-                                                                                      + len(buried)))
+    print("Total number of surface residues: " + str(len(exposed)) + " out of " + str(len(exposed) + len(semiburied) + len(buried)))
 
     time.sleep(5)
     # Check if the files already exists, not to have a repetition
@@ -162,7 +161,7 @@ def main(folder_answer, folder_name, pdbfile, active_site):
                 print(aa + "\t\t" + aa_s2_perc[aa] + "\t\t" + str(aa_n[aa]), file=f1)
             print("Total number of surface residues: " + str(len(exposed)), file=f1)
 
-    time.sleep(2)
+    time.sleep(3)
 
     # Clustering part: First, sort amino acids into groups of the most important types for protein immobilisation;
     # Second, check if those amino acids are at less than 10A. If so, identify them as a cluster.

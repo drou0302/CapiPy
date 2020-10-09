@@ -98,6 +98,7 @@ def main(folder_answer, folder_name, prot_sequence, blast_response):
         id_1 = best_hit.hit.id.split("|")[1]
         print("Your blast returned the following as the best hit:\n" + str(best_hit)
               + ".\n Visit https://www.rcsb.org/structure/" + str(id_1) + " for more information about the model.")
+        time.sleep(3)
     else:
         print("Your blast doesn't seem to contain any result. Check the sequence and run the program again. "
               "If you run it over the server, consider using local blast. The program is going to quit now.")
@@ -193,6 +194,7 @@ def main(folder_answer, folder_name, prot_sequence, blast_response):
     try:
         align_for_modeller(True)
         print("First model created succesfully")
+        time.sleep(3)
     except BaseException:
         try:
             delete_files = ["alignment.fasta", "salign.ali", "salign1.ali", "model.fasta"]

@@ -80,7 +80,7 @@ def main(folder_name, folder_answer, prot_sequence, model_prot, use_uniprot):
     except BaseException:
         print("It seems that your model protein does not have a uniprot equivalent... "
               "You can try with an alternate model!")
-        time.sleep(5)
+        time.sleep(3)
         quit()
     if uniprotID.isalpha():
         print("Your pdb does not appear to have a UniProt equivalent. Sorry!")
@@ -242,6 +242,7 @@ def main(folder_name, folder_answer, prot_sequence, model_prot, use_uniprot):
         try:
             up_maxid = uniprotids_clean[alignment_scores.index(max(alignment_scores))]
             print("The best hit for your protein is uniprotID: " + str(up_maxid) + ". \n")
+            time.sleep(3)
         except BaseException:
             print("Could not find a protein with enough homology with your query. "
                   "You can try again with a different model!")
@@ -298,6 +299,7 @@ def main(folder_name, folder_answer, prot_sequence, model_prot, use_uniprot):
         score = 100
 
     print("\t Percentage of identity = " + str(score) + "\n")
+    time.sleep(3)
     if 40 > score > 15:
         identity = 1
     elif score <= 15:
@@ -361,6 +363,7 @@ def main(folder_name, folder_answer, prot_sequence, model_prot, use_uniprot):
                 catalytic_res1lett[positions] = [catalytic_res[positions]]
         # From the known catalytic positions, identify the corresponding positions in the alignment
         print("Identifying the predicted catalytic residues in your protein...\n")
+        time.sleep(3)
         a = 0
         positions_tocheck = []
         for it in aaposition_cat1:
@@ -441,6 +444,7 @@ def main(folder_name, folder_answer, prot_sequence, model_prot, use_uniprot):
         print("\n* : Residue predicted in the query but not present as part of the active site of the model.\n")
         print("\n* : Residue predicted in the query but not present as part of the active site of the model.\n",
               file=res)
+        time.sleep(3)
     else:
         if len(bind_site) > 0:
             print("Due to low homology, calculation of the active site failed. "
@@ -512,7 +516,7 @@ def main(folder_name, folder_answer, prot_sequence, model_prot, use_uniprot):
         if file not in tokeep:
             os.remove(file)
 
-    print("\n\tFinished running the ActiveSiteID!\n. Your results can be found in " + str(os.getcwd()) +
+    print("\nFinished running the ActiveSiteID!\n. Your results can be found in " + str(os.getcwd()) +
           ", in a file named Active_site.txt, together with the alignment and the fasta files for your sequences. "
           "You can run now the Surface&Clusters module! ")
 
