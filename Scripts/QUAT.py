@@ -39,6 +39,7 @@ def main(folder_name, monomeric_model, multimeric_model):
             os.chdir("./Blast&Modeller")
     except OSError:
         print("Error accessing the folder. Are you sure it exists?")
+        quit()
     protein_sequence = monomeric_model
     try:
         shutil.copy(protein_sequence, "./monomeric_structure.pdb")

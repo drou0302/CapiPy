@@ -221,30 +221,31 @@ while True:
                 checks = []
                 if values_m3[0] is True and values_m3[2] is False:
                     folder_answer = "NO"
-                    folder_name = values_m3[1]
+                    if values_m3[1] != "":
+                        folder_name = values_m3[1]
+                    else:
+                        checks.append("Error: Indicate the name of the folder.")
+                        
                 elif values_m3[0] is False and values_m3[2] is True:
                     folder_anwer = 'YES'
-                    folder_name = values_m3[3]
+                    if values_m3[1] != "":
+                        folder_name = values_m3[3]
+                    else:
+                        checks.append("Error: Indicate the name of the folder.")
                 elif values_m3[0] == values_m3[2]:
-                    checks.append('Error: Select a folder or create a new one.')
+                    checks.append('Error: Select a folder or create a new one.')   
+                         
                 if values_m3[4] != '':
                     pdbfile = values_m3[4]
                 else:
-                    checks.append('Error: Indicate the name of the pdb file!')
-
+                        checks.append('Error: Indicate the name of the pdb file!')
+    
                 if values_m3[5] is True:
                     active_site = 'YES'
                 elif values_m3[5] is False and len(values_m3[6] > 0):
                     active_site = values_m3[6].replace(" ", "").split(",")
                 else:
-                    print("Error: S")
-
-                if values_m3[5] is True:
-                    active_site = 'YES'
-                elif values_m3[5] is False and len(values_m3[6] > 0):
-                    active_site = values_m3[6].replace(" ", "").split(",")
-                else:
-                    print("Error: S")
+                    checks.append("Error: Untick the box or indicate the active site residues!")
 
                 if len(checks) == 0:
                     print('Module running, be patient. This can take a few minutes...\n')

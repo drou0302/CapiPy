@@ -37,6 +37,7 @@ def main(folder_name, folder_answer, prot_sequence, model_prot, use_uniprot):
             os.chdir("./ActiveSite")
     else:
         print("The folder specified doesn't exist! Check again.")
+        quit()
 
     # Download M-CSA in csv format if no in there already - https://www.ebi.ac.uk/thornton-srv/m-csa/
 

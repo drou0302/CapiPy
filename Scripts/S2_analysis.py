@@ -496,10 +496,10 @@ def main(folder_answer, folder_name, pdbfile, active_site):
 
         # Assuming all contacts in the different chains are the same as in chain A,
         # copy the residue position to each chain.
-        l1 = 1
-        for l1 in range(number_of_chains):
-            interface_res[chainids[l]] = interface_res["A"]
-            l1 += 1
+        count_start = 1
+        for count_start in range(number_of_chains):
+            interface_res[chainids[count_start]] = interface_res["A"]
+            count_start += 1
 
         # Write information to file so it doesn't have to be calculated again.
         with open("residues_interface.txt", "a") as fileint:
@@ -546,12 +546,11 @@ def main(folder_answer, folder_name, pdbfile, active_site):
                         if x not in list1:
                             list1.append(x)
 
-    parent_dir = dirname(os.getcwd().replace("\\", "/"))
-    str_ac = parent_dir + "/ActiveSite/Active_site.txt"
-
     if active_site == "YES":
         # If this information exists in the active_site directory, give the option to use directly that information.
         # If not, ask for user input on where the active site is located
+        parent_dir = dirname(os.getcwd().replace("\\", "/"))
+        str_ac = parent_dir + "/ActiveSite/Active_site.txt"
         aspositions_0 = []
         if os.path.exists(str_ac) is True:
             with open(parent_dir + "/ActiveSite/Active_site.txt", "r") as f:
@@ -564,39 +563,42 @@ def main(folder_answer, folder_name, pdbfile, active_site):
                   "please run it and check the results!")
 
     else:
+        print("Using user defined positions for the active site...")
         aspositions_0 = active_site
-        aspositions = []
-        for aa in aspositions_0:
-            if isinstance(aa, list) is True:
-                for aa1 in aa:
-                    aspositions.append(aa1)
-            else:
-                aspositions.append(aa)
+        
+    aspositions = []
+    for aa in aspositions_0:
+        if isinstance(aa, list) is True:
+            for aa1 in aa:
+                aspositions.append(aa1)
+        else:
+            aspositions.append(aa)
 
         # Calculate if any residue in the cluster is close to the active site residues
-        asposd = []
-        asnegd = []
-        ashisd = []
-        aslysd = []
-        ascysd = []
-        ashidrophd = []
+    asposd = []
+    asnegd = []
+    ashisd = []
+    aslysd = []
+    ascysd = []
+    ashidrophd = []
 
-        number_of_chains = 0
-        for chain in mdel.get_chains():
-            number_of_chains += 1
-        dist_to_as(cluster_pos, asposd)
-        dist_to_as(cluster_neg, asnegd)
-        dist_to_as(cluster_his, ashisd)
-        dist_to_as(cluster_lys, aslysd)
-        dist_to_as(cluster_cys, ascysd)
-        dist_to_as(cluster_hidroph, ashidrophd)
-        writecluster(aspositions, cluster_pos, asposd, "Cluster_ActiveSite.txt")
-        writecluster(aspositions, cluster_neg, asnegd, "Cluster_ActiveSite.txt")
-        writecluster(aspositions, cluster_his, ashisd, "Cluster_ActiveSite.txt")
-        writecluster(aspositions, cluster_lys, aslysd, "Cluster_ActiveSite.txt")
-        writecluster(aspositions, cluster_cys, ascysd, "Cluster_ActiveSite.txt")
-        writecluster(aspositions, cluster_hidroph, ashidrophd, "Cluster_ActiveSite.txt")
-        print("Information of the cluster distance to the active site can be found in Cluster_ActiveSite.txt")
+    number_of_chains = 0
+    for chain in mdel.get_chains():
+        number_of_chains += 1
+        
+    dist_to_as(cluster_pos, asposd)
+    dist_to_as(cluster_neg, asnegd)
+    dist_to_as(cluster_his, ashisd)
+    dist_to_as(cluster_lys, aslysd)
+    dist_to_as(cluster_cys, ascysd)
+    dist_to_as(cluster_hidroph, ashidrophd)
+    writecluster(aspositions, cluster_pos, asposd, "Cluster_ActiveSite.txt")
+    writecluster(aspositions, cluster_neg, asnegd, "Cluster_ActiveSite.txt")
+    writecluster(aspositions, cluster_his, ashisd, "Cluster_ActiveSite.txt")
+    writecluster(aspositions, cluster_lys, aslysd, "Cluster_ActiveSite.txt")
+    writecluster(aspositions, cluster_cys, ascysd, "Cluster_ActiveSite.txt")
+    writecluster(aspositions, cluster_hidroph, ashidrophd, "Cluster_ActiveSite.txt")
+    print("Information of the cluster distance to the active site can be found in Cluster_ActiveSite.txt")
 
     # Clean the directory of intermediate files which are not necessary
     time.sleep(2)

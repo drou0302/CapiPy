@@ -42,7 +42,8 @@ def main(folder_answer, folder_name, prot_sequence, blast_response):
                 os.chdir("./Blast&Modeller")
         else:
             print("Error accessing the folder. Are you sure it exists?")
-
+            quit()
+            
     elif work_creation == "YES":
         working_directory = folder_name
         if os.path.exists("./" + working_directory) is False:
