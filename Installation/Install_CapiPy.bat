@@ -13,5 +13,6 @@ cd Environment
 type NUL > installation.log
 copy *.log  installation.log
 copy installation.log ..\
+
 echo Installation complete. Check installation.log for errors.
 pause
