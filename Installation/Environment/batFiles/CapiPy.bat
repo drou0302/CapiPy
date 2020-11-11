@@ -1,4 +1,4 @@
 @echo off
 call conda activate vCapiPy
-python ./Installation/Environment/Files/CapiPy.py
+python ./Scripts/CapiPy.py
 call conda deactivate
