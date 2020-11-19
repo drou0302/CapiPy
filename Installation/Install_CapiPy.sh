@@ -1,5 +1,5 @@
 #!/bin/bash
-source /home/drou/Documents/miniconda2/etc/profile.d/conda.sh
+source $CONDA/miniconda2/etc/profile.d/conda.sh
 
 echo Creating vCapPy environment...
 conda env create -f ./Environment/vCapiPy.yml > ./env_creation.log 2>&1
