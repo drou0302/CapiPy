@@ -22,25 +22,45 @@ MODULE 1.1: QUATERNARY STRUCTURE DETERMINATION: with a monomeric model created, 
 
 MODULE 3.1: CLUSTER DISTANCE: once the clusters have been identified, similar to the last part of the third module, this allows the calculation of the distance between the clusters and any user-specified position in the query protein. 
 
-## Technologies:
-- Python 3.7 or later including:
-    - biopython 1.77
-    - metapub 0.5.5
-    - more-itertools 8.4.0
-    - numpy 1.19.0
-    - PySimpleGUI 4.29.0
-## Setup:
-To run CapiPy, install it locally by unpacking the content of the downloaded zip file.
-* If your OS is Windows, double click on the Install_CapiPy.bat and follow the instructions.
-* If your OS is Linux-based or MacOS, open a terminal window and type:
+## Needed software:
+Software that requires external installation:
+- Blast (https://www.ncbi.nlm.nih.gov/books/NBK279671/)
+- PyMol (https://pymol.org/2/)
+- ClustalW (http://clustal.org/clustal2/)
+- Microsoft Visual Studio (https://visualstudio.microsoft.com/downloads/)
+- Anaconda 3 (https://www.anaconda.com/products/individual)
+Automatically installed following the standard installation:
+    - Python 3.7 or later including:
+        - biopython 1.77
+        - metapub 0.5.5
+        - more-itertools 8.4.0
+        - numpy 1.19.0
+        - PySimpleGUI 4.29.0
+## Installation and usage:
+### Standard installation:
+Install it locally by unpacking the content of the downloaded zip file.
+- If your OS is Windows, double click on the Install_CapiPy.bat and follow the instructions or open a terminal and type:
 '''
 $ cd ../CapiPy-main
-$ chmod +x Install_CapiPy.sh
+$ ./Install_CapiPy.bat
+'''
+- If your OS is Linux-based or MacOS, open a terminal window and type:
+'''
+$ cd ../CapiPy-main
+$ chmod u+x Install_CapiPy.sh
 $ ./Install_CapiPy.sh
 '''
 
-
-	
+### Running CapiPy:
+To run CapiPy:
+- If your OS is Windows, double click on the CapiPy.bat
+- If your OS is Linux-based or MacOS:
+'''
+$ cd ../CapiPy-main
+$ chmod u+x CapiPy.sh
+$ ./CapiPy.sh
+'''
+or double click on the CapiPy.sh file and select open with Terminal.
 
 
 
