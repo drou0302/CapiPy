@@ -3,6 +3,7 @@
 * [Introduction](#intro)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [Troubleshooting](#troubleshooting)
 
 ## Introduction: What is CapiPy?
 CapiPy (Computer Assistance for Protein Immobilisation – Python) is a small collection of 4 main packages to retrieve useful information for the immobilisation of a query protein.	 
@@ -40,7 +41,7 @@ Included in the standard installation:
 To run CapiPy, install it locally by unpacking the content of the downloaded zip file.
 * If your OS is Windows, double click on the Install_CapiPy.bat and follow the instructions.
 * If your OS is Linux-based or MacOS, open a terminal window and type:
-'''
+```
 $ cd ../CapiPy-main
 $ chmod +x Install_CapiPy.sh
 $ ./Install_CapiPy.sh
