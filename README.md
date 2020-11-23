@@ -1,9 +1,8 @@
 # CapiPy
-## Table of contents:
+##Table of contents:
 * [Introduction](#intro)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Troubleshooting](#troubleshooting)
 
 ## Introduction: What is CapiPy?
 CapiPy (Computer Assistance for Protein Immobilisation – Python) is a small collection of 4 main packages to retrieve useful information for the immobilisation of a query protein.	 
@@ -23,74 +22,25 @@ MODULE 1.1: QUATERNARY STRUCTURE DETERMINATION: with a monomeric model created, 
 
 MODULE 3.1: CLUSTER DISTANCE: once the clusters have been identified, similar to the last part of the third module, this allows the calculation of the distance between the clusters and any user-specified position in the query protein. 
 
-## Needed software:
-Software that requires external installation:
-- Blast (https://www.ncbi.nlm.nih.gov/books/NBK279671/)
-- PyMol (https://pymol.org/2/)
-- ClustalW (http://clustal.org/clustal2/)
-- Microsoft Visual Studio (https://visualstudio.microsoft.com/downloads/)
-- Anaconda 3 (https://www.anaconda.com/products/individual)
-
-Automatically installed following the standard installation:
-- Python 3.7 or later including:
-    - biopython 1.77
-    - metapub 0.5.5
-    - more-itertools 8.4.0
-    - numpy 1.19.0
-    - PySimpleGUI 4.29.0
-## Installation and usage:
-### Standard installation:
-Install it locally by unpacking the content of the downloaded zip file.
-- If your OS is Windows, double click on the Install_CapiPy.bat and follow the instructions or open a terminal and type:
-```
+## Technologies:
+*Python 3.7 or later including:
+**biopython 1.77
+**metapub 0.5.5
+**more-itertools 8.4.0
+**numpy 1.19.0
+**PySimpleGUI 4.29.0
+## Setup:
+To run CapiPy, install it locally by unpacking the content of the downloaded zip file.
+* If your OS is Windows, double click on the Install_CapiPy.bat and follow the instructions.
+* If your OS is Linux-based or MacOS, open a terminal window and type:
+'''
 $ cd ../CapiPy-main
-$ ./Install_CapiPy.bat
-```
-- If your OS is Linux-based or MacOS, open a terminal window and type:
-```
-$ cd ../CapiPy-main
-$ chmod u+x Install_CapiPy.sh
+$ chmod +x Install_CapiPy.sh
 $ ./Install_CapiPy.sh
-```
-
-### Running CapiPy:
-To run CapiPy:
-- If your OS is Windows, double click on the CapiPy.bat
-- If your OS is Linux-based or MacOS:
-```
-$ cd ../CapiPy-main
-$ chmod u+x CapiPy.sh
-$ ./CapiPy.sh
-```
-or double click on the CapiPy.sh file and select open with Terminal.
-
-## Troubleshooting:
-### Installation:
-
-| Error | Troubleshoot |
-| ---|---|
-| CondaValueError: Value error: prefix already exists: | An environment with the same name already exists. Please delete it either by running the Uninstall.bat / Uninstall.sh file or run in a terminal: ````conda env remove --name vCapiPy````|
-| Installation fails with error related to Python Levenshtein   | Make sure you have installed Microsoft Visual Studio and downloaded the C++ modules. |
-|Cannot fix the Residue.py file|Copy manually the Residue.py provided in the Environment folder to PATHtoCONDA\envs\vCapiPy\lib\site-packages\Bio\PDB\|
-|Cannot fix the \_\_init\_\_.py Modeller|Go to the modeller folder (PATHtoCONDA\envs\vCapiPy\Library\modeller\modlib\modeller\) and manually edit the \_\_init\_\_.py file in line 68 to read: dpath = config.install_dir + '\\modlib\\'  __Make sure you do not change the indentation!__ |
-| Cannot fix the config file from Modeller | Go to the modeller folder (PATHtoCONDA\envs\vCapiPy\Library\modeller\modlib\modeller\) and manually edit the config.py file. Replace the XXXX after license to your modeller license code. |
+'''
 
 
-
-### Running:
-#### External software:
-| Error | Troubleshoot |
-| ---|---|
-| blastp not recognized as an internal or external command.   | Check that the folder containing the executable (PATH/blast-2.XX-/bin) is in your PATH variables.  |
-| Local BLAST search does not work | Check that the databases are in the correct location and the ncbi.ini file is in the blast/bin folder. |
-| Web BLAST search does not work or takes long time | Try again in a few minutes. Online BLAST depends on the server availability. |
-| Modeller license is missing | Go to the modeller folder (PATHtoCONDA\envs\vCapiPy\Library\modeller\modlib\modeller\) and manually edit the config.py file. Replace the XXXX after license to your modeller license code.  |
-| Modeller cannot find the specified location | Go to the modeller folder (PATHtoCONDA\envs\vCapiPy\Library\modeller\modlib\modeller\) and manually edit the \_\_init\_\_.py file in line 68 to read: dpath = config.install_dir + '\\modlib\\'  __Make sure you do not change the indentation!__  |
-| Clustalw2 not recognized | Make sure clustalw2 is in the Applications folder and this in the PATH variables.|
+	
 
 
-#### CapiPy related errors:
-| Error | Troubleshoot |
-| ---|---|
-|Cannot execute .sh files | You need to make the .sh file executable first with the command ``` chmod +x scriptname.sh``` |
 
