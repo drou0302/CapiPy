@@ -31,12 +31,12 @@ Software that requires external installation:
 - Anaconda 3 (https://www.anaconda.com/products/individual)
 
 Automatically installed following the standard installation:
-    - Python 3.7 or later including:
-        - biopython 1.77
-        - metapub 0.5.5
-        - more-itertools 8.4.0
-        - numpy 1.19.0
-        - PySimpleGUI 4.29.0
+- Python 3.7 or later including:
+    - biopython 1.77
+    - metapub 0.5.5
+    - more-itertools 8.4.0
+    - numpy 1.19.0
+    - PySimpleGUI 4.29.0
 ## Installation and usage:
 ### Standard installation:
 Install it locally by unpacking the content of the downloaded zip file.
