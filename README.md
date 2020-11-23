@@ -1,5 +1,5 @@
 # CapiPy
-##Table of contents:
+## Table of contents:
 * [Introduction](#intro)
 * [Technologies](#technologies)
 * [Setup](#setup)
@@ -23,12 +23,19 @@ MODULE 1.1: QUATERNARY STRUCTURE DETERMINATION: with a monomeric model created, 
 MODULE 3.1: CLUSTER DISTANCE: once the clusters have been identified, similar to the last part of the third module, this allows the calculation of the distance between the clusters and any user-specified position in the query protein.
 
 ## Technologies:
-*Python 3.7 or later including:
-**biopython 1.77
-**metapub 0.5.5
-**more-itertools 8.4.0
-**numpy 1.19.0
-**PySimpleGUI 4.29.0
+External software requirements:
+-	Anaconda (miniconda or anaconda) - https://www.anaconda.com/products/individual
+- PyMOL - https://pymol.org/2/ or https://sourceforge.net/projects/pymol/files/latest/download
+- Visual studio C++ tools - https://visualstudio.microsoft.com/downloads/
+- Clustalw - http://clustal.org/clustal2/
+- Blast 2.XX - https://www.ncbi.nlm.nih.gov/books/NBK279671/
+Included in the standard installation:
+- Python 3.7 or later including:
+    - biopython 1.77
+    - metapub 0.5.5
+    - more-itertools 8.4.0
+    - numpy 1.19.0
+    - PySimpleGUI 4.29.0
 ## Setup:
 To run CapiPy, install it locally by unpacking the content of the downloaded zip file.
 * If your OS is Windows, double click on the Install_CapiPy.bat and follow the instructions.
