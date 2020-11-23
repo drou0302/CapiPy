@@ -84,8 +84,8 @@ or double click on the CapiPy.sh file and select open with Terminal.
 | blastp not recognized as an internal or external command.   | Check that the folder containing the executable (PATH/blast-2.XX-/bin) is in your PATH variables.  |
 | Local BLAST search does not work | Check that the databases are in the correct location and the ncbi.ini file is in the blast/bin folder. |
 | Web BLAST search does not work or takes long time | Try again in a few minutes. Online BLAST depends on the server availability. |
-| Modeller license is missing | Content Cell  |
-| Modeller cannot find the specified location | Content Cell  |
+| Modeller license is missing | Go to the modeller folder (PATHtoCONDA\envs\vCapiPy\Library\modeller\modlib\modeller\) and manually edit the config file. Replace the XXXX after license to your modeller license code.  |
+| Modeller cannot find the specified location | Go to the modeller folder (PATHtoCONDA\envs\vCapiPy\Library\modeller\modlib\modeller\) and manually edit the \_\_init\_\_.py file in line 68 to read: dpath = config.install_dir + '\\modlib\\'  __Make sure you do not change the indentation!__  |
 | Clustalw2 not recognized | Make sure clustalw2 is in the Applications folder and this in the PATH variables.|
 
 
