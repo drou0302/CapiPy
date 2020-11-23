@@ -1,4 +1,10 @@
 # CapiPy
+##Table of contents:
+* [Introduction](#intro)
+* [Technologies](#technologies)
+* [Setup](#setup)
+
+## Introduction: What is CapiPy?
 CapiPy (Computer Assistance for Protein Immobilisation – Python) is a small collection of 4 main packages to retrieve useful information for the immobilisation of a query protein.	 
 Information from each module, specially the Blast and modeller is preferentially used by the others. In case no such information is given, the user will have to input the necessary information. 
 
@@ -15,3 +21,26 @@ In addition, two stand-alone functionalities of the first and third module are a
 MODULE 1.1: QUATERNARY STRUCTURE DETERMINATION: with a monomeric model created, this module allows the user to select a template from the PDB dataset to create a different quaternary assembly.
 
 MODULE 3.1: CLUSTER DISTANCE: once the clusters have been identified, similar to the last part of the third module, this allows the calculation of the distance between the clusters and any user-specified position in the query protein. 
+
+## Technologies:
+*Python 3.7 or later including:
+**biopython 1.77
+**metapub 0.5.5
+**more-itertools 8.4.0
+**numpy 1.19.0
+**PySimpleGUI 4.29.0
+## Setup:
+To run CapiPy, install it locally by unpacking the content of the downloaded zip file.
+* If your OS is Windows, double click on the Install_CapiPy.bat and follow the instructions.
+* If your OS is Linux-based or MacOS, open a terminal window and type:
+'''
+$ cd ../CapiPy-main
+$ chmod +x Install_CapiPy.sh
+$ ./Install_CapiPy.sh
+'''
+
+
+	
+
+
+
