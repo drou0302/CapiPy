@@ -29,6 +29,7 @@ Software that requires external installation:
 - ClustalW (http://clustal.org/clustal2/)
 - Microsoft Visual Studio (https://visualstudio.microsoft.com/downloads/)
 - Anaconda 3 (https://www.anaconda.com/products/individual)
+
 Automatically installed following the standard installation:
     - Python 3.7 or later including:
         - biopython 1.77
