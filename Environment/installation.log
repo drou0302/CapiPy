@@ -1,367 +1,0 @@
-Collecting package metadata (repodata.json): ...working... done
-Solving environment: ...working... done
-
-
-==> WARNING: A newer version of conda exists. <==
-  current version: 4.8.2
-  latest version: 4.9.2
-
-Please update conda by running
-
-    $ conda update -n base -c defaults conda
-
-
-
-Downloading and Extracting Packages
-chardet-3.0.4        | 189 KB    |            |   0% chardet-3.0.4        | 189 KB    | 8          |   8% chardet-3.0.4        | 189 KB    | ########## | 100% 
-wheel-0.35.1         | 37 KB     |            |   0% wheel-0.35.1         | 37 KB     | ########## | 100% 
-importlib_metadata-2 | 11 KB     |            |   0% importlib_metadata-2 | 11 KB     | ########## | 100% 
-nltk-3.5             | 976 KB    |            |   0% nltk-3.5             | 976 KB    | ########## | 100% 
-comtypes-1.1.7       | 238 KB    |            |   0% comtypes-1.1.7       | 238 KB    | 6          |   7% comtypes-1.1.7       | 238 KB    | ########## | 100% 
-pyyaml-5.3.1         | 156 KB    |            |   0% pyyaml-5.3.1         | 156 KB    | ########## | 100% 
-python-language-serv | 48 KB     |            |   0% python-language-serv | 48 KB     | ########## | 100% 
-lazy-object-proxy-1. | 30 KB     |            |   0% lazy-object-proxy-1. | 30 KB     | ########## | 100% 
-requests-2.24.0      | 56 KB     |            |   0% requests-2.24.0      | 56 KB     | ########## | 100% 
-jupyter_console-6.2. | 26 KB     |            |   0% jupyter_console-6.2. | 26 KB     | ########## | 100% 
-numpy-1.19.2         | 22 KB     |            |   0% numpy-1.19.2         | 22 KB     | ########## | 100% 
-pyodbc-4.0.30        | 68 KB     |            |   0% pyodbc-4.0.30        | 68 KB     | ##3        |  23% pyodbc-4.0.30        | 68 KB     | ########## | 100% 
-paramiko-2.7.2       | 143 KB    |            |   0% paramiko-2.7.2       | 143 KB    | ########## | 100% 
-asn1crypto-1.4.0     | 80 KB     |            |   0% asn1crypto-1.4.0     | 80 KB     | ########## | 100% 
-intervaltree-3.1.0   | 26 KB     |            |   0% intervaltree-3.1.0   | 26 KB     | ########## | 100% 
-certifi-2020.6.20    | 155 KB    |            |   0% certifi-2020.6.20    | 155 KB    | ########## | 100% 
-libssh2-1.9.0        | 215 KB    |            |   0% libssh2-1.9.0        | 215 KB    | ########## | 100% 
-kiwisolver-1.3.0     | 78 KB     |            |   0% kiwisolver-1.3.0     | 78 KB     | ########## | 100% 
-pkginfo-1.6.1        | 60 KB     |            |   0% pkginfo-1.6.1        | 60 KB     | ########## | 100% 
-werkzeug-1.0.1       | 240 KB    |            |   0% werkzeug-1.0.1       | 240 KB    | ########## | 100% 
-wincertstore-0.2     | 15 KB     |            |   0% wincertstore-0.2     | 15 KB     | ########## | 100% 
-pyzmq-19.0.2         | 400 KB    |            |   0% pyzmq-19.0.2         | 400 KB    | ########## | 100% 
-sphinxcontrib-qthelp | 25 KB     |            |   0% sphinxcontrib-qthelp | 25 KB     | ########## | 100% 
-anaconda-2020.11     | 17 KB     |            |   0% anaconda-2020.11     | 17 KB     | #########2 |  92% anaconda-2020.11     | 17 KB     | ########## | 100% 
-decorator-4.4.2      | 14 KB     |            |   0% decorator-4.4.2      | 14 KB     | ########## | 100% 
-cycler-0.10.0        | 14 KB     |            |   0% cycler-0.10.0        | 14 KB     | ########## | 100% 
-jedi-0.17.1          | 923 KB    |            |   0% jedi-0.17.1          | 923 KB    | 1          |   2% jedi-0.17.1          | 923 KB    | ########## | 100% 
-intel-openmp-2020.2  | 1.6 MB    |            |   0% intel-openmp-2020.2  | 1.6 MB    | ######     |  60% intel-openmp-2020.2  | 1.6 MB    | ########## | 100% 
-pywin32-ctypes-0.2.0 | 42 KB     |            |   0% pywin32-ctypes-0.2.0 | 42 KB     | ###8       |  39% pywin32-ctypes-0.2.0 | 42 KB     | ########## | 100% 
-zope.event-4.5.0     | 210 KB    |            |   0% zope.event-4.5.0     | 210 KB    | ########## | 100% 
-pycosat-0.6.3        | 74 KB     |            |   0% pycosat-0.6.3        | 74 KB     | ##1        |  22% pycosat-0.6.3        | 74 KB     | ########## | 100% 
-libsodium-1.0.18     | 477 KB    |            |   0% libsodium-1.0.18     | 477 KB    | ########## | 100% 
-zipp-3.4.0           | 15 KB     |            |   0% zipp-3.4.0           | 15 KB     | ########## | 100% 
-scikit-image-0.17.2  | 8.9 MB    |            |   0% scikit-image-0.17.2  | 8.9 MB    | #          |  11% scikit-image-0.17.2  | 8.9 MB    | ##3        |  24% scikit-image-0.17.2  | 8.9 MB    | ###6       |  37% scikit-image-0.17.2  | 8.9 MB    | ####9      |  50% scikit-image-0.17.2  | 8.9 MB    | ######2    |  62% scikit-image-0.17.2  | 8.9 MB    | #######5   |  75% scikit-image-0.17.2  | 8.9 MB    | ########8  |  88% scikit-image-0.17.2  | 8.9 MB    | ########## | 100% 
-packaging-20.4       | 36 KB     |            |   0% packaging-20.4       | 36 KB     | ########## | 100% 
-win_inet_pton-1.1.0  | 9 KB      |            |   0% win_inet_pton-1.1.0  | 9 KB      | ########## | 100% 
-anaconda-client-1.7. | 172 KB    |            |   0% anaconda-client-1.7. | 172 KB    | ########## | 100% 
-freetype-2.10.4      | 466 KB    |            |   0% freetype-2.10.4      | 466 KB    | ########## | 100% 
-tifffile-2020.10.1   | 292 KB    |            |   0% tifffile-2020.10.1   | 292 KB    | ########## | 100% 
-cryptography-3.1.1   | 528 KB    |            |   0% cryptography-3.1.1   | 528 KB    | ########## | 100% 
-traitlets-5.0.5      | 83 KB     |            |   0% traitlets-5.0.5      | 83 KB     | ########## | 100% 
-qtawesome-1.0.1      | 757 KB    |            |   0% qtawesome-1.0.1      | 757 KB    | ########## | 100% 
-yaml-0.2.5           | 62 KB     |            |   0% yaml-0.2.5           | 62 KB     | ########## | 100% 
-blosc-1.20.1         | 142 KB    |            |   0% blosc-1.20.1         | 142 KB    | ########## | 100% 
-pep8-1.7.1           | 69 KB     |            |   0% pep8-1.7.1           | 69 KB     | ##3        |  23% pep8-1.7.1           | 69 KB     | ########## | 100% 
-numpydoc-1.1.0       | 42 KB     |            |   0% numpydoc-1.1.0       | 42 KB     | ########## | 100% 
-sqlite-3.33.0        | 809 KB    |            |   0% sqlite-3.33.0        | 809 KB    | ########## | 100% 
-lz4-c-1.9.2          | 106 KB    |            |   0% lz4-c-1.9.2          | 106 KB    | ########## | 100% 
-urllib3-1.25.11      | 99 KB     |            |   0% urllib3-1.25.11      | 99 KB     | ########## | 100% 
-isort-5.6.4          | 78 KB     |            |   0% isort-5.6.4          | 78 KB     | ########## | 100% 
-alabaster-0.7.12     | 16 KB     |            |   0% alabaster-0.7.12     | 16 KB     | ########## | 100% 
-pytest-6.1.1         | 428 KB    |            |   0% pytest-6.1.1         | 428 KB    | ########## | 100% 
-astropy-4.0.2        | 5.9 MB    |            |   0% astropy-4.0.2        | 5.9 MB    | #3         |  14% astropy-4.0.2        | 5.9 MB    | ###2       |  33% astropy-4.0.2        | 5.9 MB    | #####2     |  52% astropy-4.0.2        | 5.9 MB    | #######1   |  71% astropy-4.0.2        | 5.9 MB    | #########  |  91% astropy-4.0.2        | 5.9 MB    | ########## | 100% 
-libcurl-7.71.1       | 275 KB    |            |   0% libcurl-7.71.1       | 275 KB    | ########## | 100% 
-modeller-9.25        | 18.5 MB   |            |   0% modeller-9.25        | 18.5 MB   | ########## | 100% 
-joblib-0.17.0        | 206 KB    |            |   0% joblib-0.17.0        | 206 KB    | ########## | 100% 
-libxml2-2.9.10       | 1.5 MB    |            |   0% libxml2-2.9.10       | 1.5 MB    | ######6    |  66% libxml2-2.9.10       | 1.5 MB    | ########## | 100% 
-sphinxcontrib-appleh | 27 KB     |            |   0% sphinxcontrib-appleh | 27 KB     | ########## | 100% 
-pynacl-1.4.0         | 1.2 MB    |            |   0% pynacl-1.4.0         | 1.2 MB    | ########   |  81% pynacl-1.4.0         | 1.2 MB    | ########## | 100% 
-jupyter-1.0.0        | 8 KB      |            |   0% jupyter-1.0.0        | 8 KB      | ########## | 100% 
-typing_extensions-3. | 28 KB     |            |   0% typing_extensions-3. | 28 KB     | ########## | 100% 
-prompt-toolkit-3.0.8 | 248 KB    |            |   0% prompt-toolkit-3.0.8 | 248 KB    | ########## | 100% 
-pyreadline-2.1       | 145 KB    |            |   0% pyreadline-2.1       | 145 KB    | ########## | 100% 
-terminado-0.9.1      | 27 KB     |            |   0% terminado-0.9.1      | 27 KB     | ########## | 100% 
-ipython-7.19.0       | 998 KB    |            |   0% ipython-7.19.0       | 998 KB    | ########## | 100% 
-openpyxl-3.0.5       | 158 KB    |            |   0% openpyxl-3.0.5       | 158 KB    | ########## | 100% 
-widgetsnbextension-3 | 863 KB    |            |   0% widgetsnbextension-3 | 863 KB    | ########## | 100% 
-h5py-2.10.0          | 841 KB    |            |   0% h5py-2.10.0          | 841 KB    | 1          |   2% h5py-2.10.0          | 841 KB    | ########## | 100% 
-pygments-2.7.2       | 674 KB    |            |   0% pygments-2.7.2       | 674 KB    | ########## | 100% 
-xz-5.2.5             | 244 KB    |            |   0% xz-5.2.5             | 244 KB    | ########## | 100% 
-pillow-8.0.1         | 690 KB    |            |   0% pillow-8.0.1         | 690 KB    | ########## | 100% 
-keyring-21.4.0       | 69 KB     |            |   0% keyring-21.4.0       | 69 KB     | ########## | 100% 
-simplegeneric-0.8.1  | 10 KB     |            |   0% simplegeneric-0.8.1  | 10 KB     | ########## | 100% 
-pexpect-4.8.0        | 83 KB     |            |   0% pexpect-4.8.0        | 83 KB     | #9         |  19% pexpect-4.8.0        | 83 KB     | ########## | 100% 
-bokeh-2.2.3          | 5.4 MB    |            |   0% bokeh-2.2.3          | 5.4 MB    | #8         |  19% bokeh-2.2.3          | 5.4 MB    | ###9       |  40% bokeh-2.2.3          | 5.4 MB    | ######1    |  61% bokeh-2.2.3          | 5.4 MB    | ########2  |  83% bokeh-2.2.3          | 5.4 MB    | ########## | 100% 
-sphinxcontrib-htmlhe | 27 KB     |            |   0% sphinxcontrib-htmlhe | 27 KB     | ########## | 100% 
-sortedcontainers-2.2 | 29 KB     |            |   0% sortedcontainers-2.2 | 29 KB     | ########## | 100% 
-pyqt-5.9.2           | 3.2 MB    |            |   0% pyqt-5.9.2           | 3.2 MB    | ##9        |  30% pyqt-5.9.2           | 3.2 MB    | ######5    |  65% pyqt-5.9.2           | 3.2 MB    | ########## | 100% 
-nest-asyncio-1.4.2   | 11 KB     |            |   0% nest-asyncio-1.4.2   | 11 KB     | ########## | 100% 
-pywavelets-1.1.1     | 3.4 MB    |            |   0% pywavelets-1.1.1     | 3.4 MB    | ##8        |  29% pywavelets-1.1.1     | 3.4 MB    | ######1    |  62% pywavelets-1.1.1     | 3.4 MB    | #########5 |  95% pywavelets-1.1.1     | 3.4 MB    | ########## | 100% 
-astroid-2.4.2        | 295 KB    |            |   0% astroid-2.4.2        | 295 KB    | ########## | 100% 
-prompt_toolkit-3.0.8 | 12 KB     |            |   0% prompt_toolkit-3.0.8 | 12 KB     | ########## | 100% 
-soupsieve-2.0.1      | 33 KB     |            |   0% soupsieve-2.0.1      | 33 KB     | ########## | 100% 
-backports.shutil_get | 9 KB      |            |   0% backports.shutil_get | 9 KB      | ########## | 100% 
-pyparsing-2.4.7      | 65 KB     |            |   0% pyparsing-2.4.7      | 65 KB     | ########## | 100% 
-toml-0.10.1          | 20 KB     |            |   0% toml-0.10.1          | 20 KB     | ########## | 100% 
-mkl-2020.2           | 109.3 MB  |            |   0% mkl-2020.2           | 109.3 MB  |            |   1% mkl-2020.2           | 109.3 MB  | 1          |   2% mkl-2020.2           | 109.3 MB  | 2          |   3% mkl-2020.2           | 109.3 MB  | 4          |   4% mkl-2020.2           | 109.3 MB  | 5          |   5% mkl-2020.2           | 109.3 MB  | 6          |   6% mkl-2020.2           | 109.3 MB  | 7          |   7% mkl-2020.2           | 109.3 MB  | 8          |   8% mkl-2020.2           | 109.3 MB  | 9          |   9% mkl-2020.2           | 109.3 MB  | #          |  10% mkl-2020.2           | 109.3 MB  | #1         |  11% mkl-2020.2           | 109.3 MB  | #2         |  12% mkl-2020.2           | 109.3 MB  | #3         |  13% mkl-2020.2           | 109.3 MB  | #4         |  14% mkl-2020.2           | 109.3 MB  | #5         |  15% mkl-2020.2           | 109.3 MB  | #6         |  16% mkl-2020.2           | 109.3 MB  | #7         |  18% mkl-2020.2           | 109.3 MB  | #8         |  19% mkl-2020.2           | 109.3 MB  | #9         |  20% mkl-2020.2           | 109.3 MB  | ##         |  21% mkl-2020.2           | 109.3 MB  | ##1        |  22% mkl-2020.2           | 109.3 MB  | ##2        |  23% mkl-2020.2           | 109.3 MB  | ##3        |  24% mkl-2020.2           | 109.3 MB  | ##4        |  25% mkl-2020.2           | 109.3 MB  | ##5        |  26% mkl-2020.2           | 109.3 MB  | ##6        |  27% mkl-2020.2           | 109.3 MB  | ##7        |  28% mkl-2020.2           | 109.3 MB  | ##8        |  29% mkl-2020.2           | 109.3 MB  | ##9        |  30% mkl-2020.2           | 109.3 MB  | ###        |  31% mkl-2020.2           | 109.3 MB  | ###1       |  32% mkl-2020.2           | 109.3 MB  | ###3       |  33% mkl-2020.2           | 109.3 MB  | ###4       |  34% mkl-2020.2           | 109.3 MB  | ###5       |  35% mkl-2020.2           | 109.3 MB  | ###6       |  36% mkl-2020.2           | 109.3 MB  | ###7       |  37% mkl-2020.2           | 109.3 MB  | ###8       |  38% mkl-2020.2           | 109.3 MB  | ###9       |  39% mkl-2020.2           | 109.3 MB  | ####       |  40% mkl-2020.2           | 109.3 MB  | ####1      |  41% mkl-2020.2           | 109.3 MB  | ####2      |  42% mkl-2020.2           | 109.3 MB  | ####3      |  43% mkl-2020.2           | 109.3 MB  | ####4      |  44% mkl-2020.2           | 109.3 MB  | ####5      |  45% mkl-2020.2           | 109.3 MB  | ####6      |  46% mkl-2020.2           | 109.3 MB  | ####7      |  48% mkl-2020.2           | 109.3 MB  | ####8      |  49% mkl-2020.2           | 109.3 MB  | ####9      |  50% mkl-2020.2           | 109.3 MB  | #####      |  51% mkl-2020.2           | 109.3 MB  | #####1     |  52% mkl-2020.2           | 109.3 MB  | #####2     |  53% mkl-2020.2           | 109.3 MB  | #####3     |  54% mkl-2020.2           | 109.3 MB  | #####4     |  55% mkl-2020.2           | 109.3 MB  | #####5     |  56% mkl-2020.2           | 109.3 MB  | #####6     |  57% mkl-2020.2           | 109.3 MB  | #####7     |  58% mkl-2020.2           | 109.3 MB  | #####8     |  59% mkl-2020.2           | 109.3 MB  | ######     |  60% mkl-2020.2           | 109.3 MB  | ######1    |  61% mkl-2020.2           | 109.3 MB  | ######2    |  62% mkl-2020.2           | 109.3 MB  | ######3    |  63% mkl-2020.2           | 109.3 MB  | ######4    |  64% mkl-2020.2           | 109.3 MB  | ######5    |  65% mkl-2020.2           | 109.3 MB  | ######6    |  66% mkl-2020.2           | 109.3 MB  | ######7    |  67% mkl-2020.2           | 109.3 MB  | ######8    |  68% mkl-2020.2           | 109.3 MB  | ######9    |  69% mkl-2020.2           | 109.3 MB  | #######    |  70% mkl-2020.2           | 109.3 MB  | #######1   |  71% mkl-2020.2           | 109.3 MB  | #######2   |  72% mkl-2020.2           | 109.3 MB  | #######3   |  74% mkl-2020.2           | 109.3 MB  | #######4   |  75% mkl-2020.2           | 109.3 MB  | #######5   |  76% mkl-2020.2           | 109.3 MB  | #######6   |  77% mkl-2020.2           | 109.3 MB  | #######7   |  78% mkl-2020.2           | 109.3 MB  | #######8   |  79% mkl-2020.2           | 109.3 MB  | #######9   |  80% mkl-2020.2           | 109.3 MB  | ########   |  81% mkl-2020.2           | 109.3 MB  | ########1  |  82% mkl-2020.2           | 109.3 MB  | ########2  |  83% mkl-2020.2           | 109.3 MB  | ########3  |  84% mkl-2020.2           | 109.3 MB  | ########5  |  85% mkl-2020.2           | 109.3 MB  | ########6  |  86% mkl-2020.2           | 109.3 MB  | ########7  |  87% mkl-2020.2           | 109.3 MB  | ########8  |  88% mkl-2020.2           | 109.3 MB  | ########9  |  89% mkl-2020.2           | 109.3 MB  | #########  |  90% mkl-2020.2           | 109.3 MB  | #########1 |  91% mkl-2020.2           | 109.3 MB  | #########2 |  92% mkl-2020.2           | 109.3 MB  | #########3 |  93% mkl-2020.2           | 109.3 MB  | #########4 |  94% mkl-2020.2           | 109.3 MB  | #########5 |  95% mkl-2020.2           | 109.3 MB  | #########6 |  97% mkl-2020.2           | 109.3 MB  | #########7 |  98% mkl-2020.2           | 109.3 MB  | #########8 |  99% mkl-2020.2           | 109.3 MB  | #########9 | 100% mkl-2020.2           | 109.3 MB  | ########## | 100% 
-curl-7.71.1          | 129 KB    |            |   0% curl-7.71.1          | 129 KB    | ########## | 100% 
-argh-0.26.2          | 36 KB     |            |   0% argh-0.26.2          | 36 KB     | ####3      |  44% argh-0.26.2          | 36 KB     | ########## | 100% 
-html5lib-1.1         | 93 KB     |            |   0% html5lib-1.1         | 93 KB     | ########## | 100% 
-pysocks-1.7.1        | 28 KB     |            |   0% pysocks-1.7.1        | 28 KB     | #####6     |  56% pysocks-1.7.1        | 28 KB     | ########## | 100% 
-pip-20.2.4           | 1.8 MB    |            |   0% pip-20.2.4           | 1.8 MB    | #####5     |  56% pip-20.2.4           | 1.8 MB    | ########## | 100% 
-pyrsistent-0.17.3    | 92 KB     |            |   0% pyrsistent-0.17.3    | 92 KB     | ########## | 100% 
-bleach-3.2.1         | 112 KB    |            |   0% bleach-3.2.1         | 112 KB    | ########## | 100% 
-iniconfig-1.1.1      | 9 KB      |            |   0% iniconfig-1.1.1      | 9 KB      | ########## | 100% 
-clyent-1.2.2         | 20 KB     |            |   0% clyent-1.2.2         | 20 KB     | ########## | 100% 
-ipywidgets-7.5.1     | 98 KB     |            |   0% ipywidgets-7.5.1     | 98 KB     | ########## | 100% 
-pywin32-227          | 5.6 MB    |            |   0% pywin32-227          | 5.6 MB    | #7         |  17% pywin32-227          | 5.6 MB    | ###7       |  38% pywin32-227          | 5.6 MB    | #####7     |  58% pywin32-227          | 5.6 MB    | #######8   |  78% pywin32-227          | 5.6 MB    | #########8 |  99% pywin32-227          | 5.6 MB    | ########## | 100% 
-mkl_fft-1.2.0        | 122 KB    |            |   0% mkl_fft-1.2.0        | 122 KB    | ########## | 100% 
-lxml-4.6.1           | 978 KB    |            |   0% lxml-4.6.1           | 978 KB    | ########## | 100% 
-atomicwrites-1.4.0   | 11 KB     |            |   0% atomicwrites-1.4.0   | 11 KB     | ########## | 100% 
-cloudpickle-1.6.0    | 30 KB     |            |   0% cloudpickle-1.6.0    | 30 KB     | ########## | 100% 
-pytables-3.6.1       | 1.1 MB    |            |   0% pytables-3.6.1       | 1.1 MB    | 1          |   1% pytables-3.6.1       | 1.1 MB    | #8         |  18% pytables-3.6.1       | 1.1 MB    | ######2    |  63% pytables-3.6.1       | 1.1 MB    | ########## | 100% 
-toolz-0.11.1         | 48 KB     |            |   0% toolz-0.11.1         | 48 KB     | ########## | 100% 
-watchdog-0.10.3      | 114 KB    |            |   0% watchdog-0.10.3      | 114 KB    | ########## | 100% 
-seaborn-0.11.0       | 210 KB    |            |   0% seaborn-0.11.0       | 210 KB    | ########## | 100% 
-ipython_genutils-0.2 | 40 KB     |            |   0% ipython_genutils-0.2 | 40 KB     | ########## | 100% 
-path.py-12.5.0       | 4 KB      |            |   0% path.py-12.5.0       | 4 KB      | ########## | 100% 
-jupyter_core-4.6.3   | 86 KB     |            |   0% jupyter_core-4.6.3   | 86 KB     | ########## | 100% 
-pylint-2.6.0         | 462 KB    |            |   0% pylint-2.6.0         | 462 KB    | ########## | 100% 
-sympy-1.6.2          | 8.7 MB    |            |   0% sympy-1.6.2          | 8.7 MB    | #1         |  11% sympy-1.6.2          | 8.7 MB    | ##4        |  24% sympy-1.6.2          | 8.7 MB    | ###7       |  38% sympy-1.6.2          | 8.7 MB    | #####      |  51% sympy-1.6.2          | 8.7 MB    | ######3    |  64% sympy-1.6.2          | 8.7 MB    | #######6   |  77% sympy-1.6.2          | 8.7 MB    | ########9  |  90% sympy-1.6.2          | 8.7 MB    | ########## | 100% 
-pickleshare-0.7.5    | 14 KB     |            |   0% pickleshare-0.7.5    | 14 KB     | ########## | 100% 
-cython-0.29.21       | 1.8 MB    |            |   0% cython-0.29.21       | 1.8 MB    |            |   1% cython-0.29.21       | 1.8 MB    | 8          |   9% cython-0.29.21       | 1.8 MB    | ###        |  30% cython-0.29.21       | 1.8 MB    | ########2  |  82% cython-0.29.21       | 1.8 MB    | ########## | 100% 
-pywinpty-0.5.7       | 52 KB     |            |   0% pywinpty-0.5.7       | 52 KB     | ########## | 100% 
-openssl-1.1.1h       | 4.8 MB    |            |   0% openssl-1.1.1h       | 4.8 MB    | ##         |  20% openssl-1.1.1h       | 4.8 MB    | ####3      |  44% openssl-1.1.1h       | 4.8 MB    | ######7    |  67% openssl-1.1.1h       | 4.8 MB    | #########  |  91% openssl-1.1.1h       | 4.8 MB    | ########## | 100% 
-webencodings-0.5.1   | 20 KB     |            |   0% webencodings-0.5.1   | 20 KB     | ########## | 100% 
-sip-4.19.13          | 262 KB    |            |   0% sip-4.19.13          | 262 KB    | ########## | 100% 
-flask-1.1.2          | 78 KB     |            |   0% flask-1.1.2          | 78 KB     | ########## | 100% 
-sphinxcontrib-websup | 34 KB     |            |   0% sphinxcontrib-websup | 34 KB     | ########## | 100% 
-fsspec-0.8.3         | 72 KB     |            |   0% fsspec-0.8.3         | 72 KB     | ########## | 100% 
-mock-4.0.2           | 32 KB     |            |   0% mock-4.0.2           | 32 KB     | ########## | 100% 
-networkx-2.5         | 1.1 MB    |            |   0% networkx-2.5         | 1.1 MB    | #########2 |  92% networkx-2.5         | 1.1 MB    | ########## | 100% 
-bkcharts-0.2         | 133 KB    |            |   0% bkcharts-0.2         | 133 KB    | #2         |  12% bkcharts-0.2         | 133 KB    | ########## | 100% 
-zlib-1.2.11          | 113 KB    |            |   0% zlib-1.2.11          | 113 KB    | ########## | 100% 
-diff-match-patch-202 | 36 KB     |            |   0% diff-match-patch-202 | 36 KB     | ########## | 100% 
-babel-2.8.1          | 5.3 MB    |            |   0% babel-2.8.1          | 5.3 MB    | #8         |  18% babel-2.8.1          | 5.3 MB    | ###9       |  40% babel-2.8.1          | 5.3 MB    | ######1    |  61% babel-2.8.1          | 5.3 MB    | ########2  |  82% babel-2.8.1          | 5.3 MB    | ########## | 100% 
-unicodecsv-0.14.1    | 28 KB     |            |   0% unicodecsv-0.14.1    | 28 KB     | #####7     |  58% unicodecsv-0.14.1    | 28 KB     | ########## | 100% 
-spyder-4.1.5         | 5.7 MB    |            |   0% spyder-4.1.5         | 5.7 MB    | #7         |  17% spyder-4.1.5         | 5.7 MB    | ###7       |  37% spyder-4.1.5         | 5.7 MB    | #####6     |  56% spyder-4.1.5         | 5.7 MB    | #######6   |  76% spyder-4.1.5         | 5.7 MB    | #########5 |  96% spyder-4.1.5         | 5.7 MB    | ########## | 100% 
-colorama-0.4.4       | 18 KB     |            |   0% colorama-0.4.4       | 18 KB     | ########## | 100% 
-python-3.8.5         | 15.7 MB   |            |   0% python-3.8.5         | 15.7 MB   | 5          |   6% python-3.8.5         | 15.7 MB   | #3         |  13% python-3.8.5         | 15.7 MB   | ##         |  20% python-3.8.5         | 15.7 MB   | ##7        |  28% python-3.8.5         | 15.7 MB   | ###4       |  35% python-3.8.5         | 15.7 MB   | ####2      |  42% python-3.8.5         | 15.7 MB   | ####9      |  49% python-3.8.5         | 15.7 MB   | #####6     |  57% python-3.8.5         | 15.7 MB   | ######3    |  64% python-3.8.5         | 15.7 MB   | #######1   |  71% python-3.8.5         | 15.7 MB   | #######8   |  78% python-3.8.5         | 15.7 MB   | ########5  |  86% python-3.8.5         | 15.7 MB   | #########2 |  93% python-3.8.5         | 15.7 MB   | ########## | 100% 
-markupsafe-1.1.1     | 29 KB     |            |   0% markupsafe-1.1.1     | 29 KB     | ########## | 100% 
-ruamel_yaml-0.15.87  | 264 KB    |            |   0% ruamel_yaml-0.15.87  | 264 KB    | ########## | 100% 
-cytoolz-0.11.0       | 289 KB    |            |   0% cytoolz-0.11.0       | 289 KB    | ########## | 100% 
-nbconvert-6.0.7      | 500 KB    |            |   0% nbconvert-6.0.7      | 500 KB    | ########## | 100% 
-jupyterlab-2.2.6     | 3.4 MB    |            |   0% jupyterlab-2.2.6     | 3.4 MB    | ##9        |  29% jupyterlab-2.2.6     | 3.4 MB    | ######2    |  63% jupyterlab-2.2.6     | 3.4 MB    | #########6 |  96% jupyterlab-2.2.6     | 3.4 MB    | ########## | 100% 
-attrs-20.3.0         | 43 KB     |            |   0% attrs-20.3.0         | 43 KB     | ########## | 100% 
-nbformat-5.0.8       | 88 KB     |            |   0% nbformat-5.0.8       | 88 KB     | ########## | 100% 
-msgpack-python-1.0.0 | 82 KB     |            |   0% msgpack-python-1.0.0 | 82 KB     | #9         |  19% msgpack-python-1.0.0 | 82 KB     | ########## | 100% 
-click-7.1.2          | 71 KB     |            |   0% click-7.1.2          | 71 KB     | ########## | 100% 
-bcrypt-3.2.0         | 44 KB     |            |   0% bcrypt-3.2.0         | 44 KB     | ########## | 100% 
-backcall-0.2.0       | 15 KB     |            |   0% backcall-0.2.0       | 15 KB     | ########## | 100% 
-brotlipy-0.7.0       | 338 KB    |            |   0% brotlipy-0.7.0       | 338 KB    | ########## | 100% 
-pyopenssl-19.1.0     | 48 KB     |            |   0% pyopenssl-19.1.0     | 48 KB     | ########## | 100% 
-python-jsonrpc-serve | 12 KB     |            |   0% python-jsonrpc-serve | 12 KB     | ########## | 100% 
-flake8-3.8.4         | 128 KB    |            |   0% flake8-3.8.4         | 128 KB    | ########## | 100% 
-dask-core-2.30.0     | 605 KB    |            |   0% dask-core-2.30.0     | 605 KB    | ########## | 100% 
-sqlalchemy-1.3.20    | 1.5 MB    |            |   0% sqlalchemy-1.3.20    | 1.5 MB    | ######6    |  67% sqlalchemy-1.3.20    | 1.5 MB    | ########## | 100% 
-setuptools-50.3.1    | 730 KB    |            |   0% setuptools-50.3.1    | 730 KB    | ########## | 100% 
-future-0.18.2        | 649 KB    |            |   0% future-0.18.2        | 649 KB    | ########## | 100% 
-pluggy-0.13.1        | 34 KB     |            |   0% pluggy-0.13.1        | 34 KB     | ########## | 100% 
-wrapt-1.11.2         | 46 KB     |            |   0% wrapt-1.11.2         | 46 KB     | ########## | 100% 
-jupyter_client-6.1.7 | 77 KB     |            |   0% jupyter_client-6.1.7 | 77 KB     | ########## | 100% 
-docutils-0.16        | 668 KB    |            |   0% docutils-0.16        | 668 KB    | ########## | 100% 
-psutil-5.7.2         | 351 KB    |            |   0% psutil-5.7.2         | 351 KB    | ########## | 100% 
-spyder-kernels-1.9.4 | 98 KB     |            |   0% spyder-kernels-1.9.4 | 98 KB     | ########## | 100% 
-scipy-1.5.2          | 11.9 MB   |            |   0% scipy-1.5.2          | 11.9 MB   | 8          |   8% scipy-1.5.2          | 11.9 MB   | #7         |  18% scipy-1.5.2          | 11.9 MB   | ##7        |  27% scipy-1.5.2          | 11.9 MB   | ###6       |  37% scipy-1.5.2          | 11.9 MB   | ####6      |  47% scipy-1.5.2          | 11.9 MB   | #####6     |  56% scipy-1.5.2          | 11.9 MB   | ######5    |  66% scipy-1.5.2          | 11.9 MB   | #######5   |  75% scipy-1.5.2          | 11.9 MB   | ########4  |  85% scipy-1.5.2          | 11.9 MB   | #########4 |  94% scipy-1.5.2          | 11.9 MB   | ########## | 100% 
-sphinxcontrib-devhel | 22 KB     |            |   0% sphinxcontrib-devhel | 22 KB     | ########## | 100% 
-zict-2.0.0           | 13 KB     |            |   0% zict-2.0.0           | 13 KB     | ########## | 100% 
-menuinst-1.4.16      | 269 KB    |            |   0% menuinst-1.4.16      | 269 KB    | ########## | 100% 
-fastcache-1.1.0      | 31 KB     |            |   0% fastcache-1.1.0      | 31 KB     | #####1     |  52% fastcache-1.1.0      | 31 KB     | ########## | 100% 
-liblief-0.10.1       | 1.6 MB    |            |   0% liblief-0.10.1       | 1.6 MB    | #####4     |  54% liblief-0.10.1       | 1.6 MB    | ########## | 100% 
-libtiff-4.1.0        | 739 KB    |            |   0% libtiff-4.1.0        | 739 KB    | ########## | 100% 
-idna-2.10            | 50 KB     |            |   0% idna-2.10            | 50 KB     | ########## | 100% 
-six-1.15.0           | 27 KB     |            |   0% six-1.15.0           | 27 KB     | ########## | 100% 
-multipledispatch-0.6 | 23 KB     |            |   0% multipledispatch-0.6 | 23 KB     | ######9    |  70% multipledispatch-0.6 | 23 KB     | ########## | 100% 
-bottleneck-1.3.2     | 106 KB    |            |   0% bottleneck-1.3.2     | 106 KB    | #5         |  15% bottleneck-1.3.2     | 106 KB    | ########## | 100% 
-send2trash-1.5.0     | 18 KB     |            |   0% send2trash-1.5.0     | 18 KB     | ########## | 100% 
-statsmodels-0.12.0   | 8.2 MB    |            |   0% statsmodels-0.12.0   | 8.2 MB    | #1         |  12% statsmodels-0.12.0   | 8.2 MB    | ##5        |  26% statsmodels-0.12.0   | 8.2 MB    | ###9       |  39% statsmodels-0.12.0   | 8.2 MB    | #####2     |  52% statsmodels-0.12.0   | 8.2 MB    | ######5    |  66% statsmodels-0.12.0   | 8.2 MB    | #######9   |  80% statsmodels-0.12.0   | 8.2 MB    | #########3 |  93% statsmodels-0.12.0   | 8.2 MB    | ########## | 100% 
-et_xmlfile-1.0.1     | 12 KB     |            |   0% et_xmlfile-1.0.1     | 12 KB     | ########## | 100% 
-path-15.0.0          | 40 KB     |            |   0% path-15.0.0          | 40 KB     | ########## | 100% 
-pycparser-2.20       | 94 KB     |            |   0% pycparser-2.20       | 94 KB     | ########## | 100% 
-ca-certificates-2020 | 122 KB    |            |   0% ca-certificates-2020 | 122 KB    | ########## | 100% 
-argon2-cffi-20.1.0   | 50 KB     |            |   0% argon2-cffi-20.1.0   | 50 KB     | ########## | 100% 
-olefile-0.46         | 33 KB     |            |   0% olefile-0.46         | 33 KB     | ########## | 100% 
-gevent-20.9.0        | 1.3 MB    |            |   0% gevent-20.9.0        | 1.3 MB    | #######3   |  74% gevent-20.9.0        | 1.3 MB    | ########## | 100% 
-nbclient-0.5.1       | 58 KB     |            |   0% nbclient-0.5.1       | 58 KB     | ########## | 100% 
-importlib-metadata-2 | 35 KB     |            |   0% importlib-metadata-2 | 35 KB     | ########## | 100% 
-py-lief-0.10.1       | 1.1 MB    |            |   0% py-lief-0.10.1       | 1.1 MB    | 1          |   1% py-lief-0.10.1       | 1.1 MB    | ##5        |  26% py-lief-0.10.1       | 1.1 MB    | #######7   |  78% py-lief-0.10.1       | 1.1 MB    | ########## | 100% 
-beautifulsoup4-4.9.3 | 91 KB     |            |   0% beautifulsoup4-4.9.3 | 91 KB     | ########## | 100% 
-jupyterlab_pygments- | 8 KB      |            |   0% jupyterlab_pygments- | 8 KB      | ########## | 100% 
-python-libarchive-c- | 46 KB     |            |   0% python-libarchive-c- | 46 KB     | ########## | 100% 
-entrypoints-0.3      | 11 KB     |            |   0% entrypoints-0.3      | 11 KB     | ########## | 100% 
-ply-3.11             | 81 KB     |            |   0% ply-3.11             | 81 KB     | #9         |  20% ply-3.11             | 81 KB     | ########## | 100% 
-rtree-0.9.4          | 49 KB     |            |   0% rtree-0.9.4          | 49 KB     | ###2       |  33% rtree-0.9.4          | 49 KB     | ########## | 100% 
-pydocstyle-5.1.1     | 38 KB     |            |   0% pydocstyle-5.1.1     | 38 KB     | ########## | 100% 
-mkl_random-1.1.1     | 245 KB    |            |   0% mkl_random-1.1.1     | 245 KB    | ########## | 100% 
-xlrd-1.2.0           | 103 KB    |            |   0% xlrd-1.2.0           | 103 KB    | ########## | 100% 
-win_unicode_console- | 34 KB     |            |   0% win_unicode_console- | 34 KB     | ####6      |  47% win_unicode_console- | 34 KB     | ########## | 100% 
-mccabe-0.6.1         | 15 KB     |            |   0% mccabe-0.6.1         | 15 KB     | ########## | 100% 
-tblib-1.7.0          | 16 KB     |            |   0% tblib-1.7.0          | 16 KB     | ########## | 100% 
-more-itertools-8.6.0 | 40 KB     |            |   0% more-itertools-8.6.0 | 40 KB     | ########## | 100% 
-sphinxcontrib-1.0    | 4 KB      |            |   0% sphinxcontrib-1.0    | 4 KB      | ########## | 100% 
-autopep8-1.5.4       | 42 KB     |            |   0% autopep8-1.5.4       | 42 KB     | ########## | 100% 
-jinja2-2.11.2        | 103 KB    |            |   0% jinja2-2.11.2        | 103 KB    | ########## | 100% 
-bitarray-1.6.1       | 116 KB    |            |   0% bitarray-1.6.1       | 116 KB    | ########## | 100% 
-itsdangerous-1.1.0   | 17 KB     |            |   0% itsdangerous-1.1.0   | 17 KB     | ########## | 100% 
-nose-1.3.7           | 235 KB    |            |   0% nose-1.3.7           | 235 KB    | 6          |   7% nose-1.3.7           | 235 KB    | ########## | 100% 
-dask-2.30.0          | 5 KB      |            |   0% dask-2.30.0          | 5 KB      | ########## | 100% 
-patsy-0.5.1          | 274 KB    |            |   0% patsy-0.5.1          | 274 KB    | 5          |   6% patsy-0.5.1          | 274 KB    | ######4    |  64% patsy-0.5.1          | 274 KB    | ########## | 100% 
-krb5-1.18.2          | 702 KB    |            |   0% krb5-1.18.2          | 702 KB    | ########## | 100% 
-distributed-2.30.1   | 1.0 MB    |            |   0% distributed-2.30.1   | 1.0 MB    | #########4 |  95% distributed-2.30.1   | 1.0 MB    | ########## | 100% 
-pyflakes-2.2.0       | 61 KB     |            |   0% pyflakes-2.2.0       | 61 KB     | ########## | 100% 
-ujson-4.0.1          | 46 KB     |            |   0% ujson-4.0.1          | 46 KB     | ########## | 100% 
-jupyterlab_server-1. | 25 KB     |            |   0% jupyterlab_server-1. | 25 KB     | ########## | 100% 
-scikit-learn-0.23.2  | 4.7 MB    |            |   0% scikit-learn-0.23.2  | 4.7 MB    | ##         |  20% scikit-learn-0.23.2  | 4.7 MB    | ####4      |  44% scikit-learn-0.23.2  | 4.7 MB    | ######8    |  69% scikit-learn-0.23.2  | 4.7 MB    | #########3 |  93% scikit-learn-0.23.2  | 4.7 MB    | ########## | 100% 
-zeromq-4.3.2         | 4.1 MB    |            |   0% zeromq-4.3.2         | 4.1 MB    | ##3        |  24% zeromq-4.3.2         | 4.1 MB    | #####1     |  51% zeromq-4.3.2         | 4.1 MB    | #######7   |  78% zeromq-4.3.2         | 4.1 MB    | ########## | 100% 
-zstd-1.4.5           | 456 KB    |            |   0% zstd-1.4.5           | 456 KB    | ########## | 100% 
-greenlet-0.4.17      | 23 KB     |            |   0% greenlet-0.4.17      | 23 KB     | ########## | 100% 
-parso-0.7.0          | 72 KB     |            |   0% parso-0.7.0          | 72 KB     | ########## | 100% 
-singledispatch-3.4.0 | 12 KB     |            |   0% singledispatch-3.4.0 | 12 KB     | ########## | 100% 
-notebook-6.1.4       | 4.3 MB    |            |   0% notebook-6.1.4       | 4.3 MB    | ##2        |  22% notebook-6.1.4       | 4.3 MB    | ####8      |  49% notebook-6.1.4       | 4.3 MB    | #######4   |  75% notebook-6.1.4       | 4.3 MB    | ########## | 100% 
-tornado-6.0.4        | 610 KB    |            |   0% tornado-6.0.4        | 610 KB    | ########## | 100% 
-matplotlib-3.3.2     | 25 KB     |            |   0% matplotlib-3.3.2     | 25 KB     | ########## | 100% 
-libxslt-1.1.34       | 399 KB    |            |   0% libxslt-1.1.34       | 399 KB    | ########## | 100% 
-numpy-base-1.19.2    | 3.8 MB    |            |   0% numpy-base-1.19.2    | 3.8 MB    | ##5        |  26% numpy-base-1.19.2    | 3.8 MB    | #####5     |  55% numpy-base-1.19.2    | 3.8 MB    | ########5  |  85% numpy-base-1.19.2    | 3.8 MB    | ########## | 100% 
-matplotlib-base-3.3. | 5.1 MB    |            |   0% matplotlib-base-3.3. | 5.1 MB    | #9         |  19% matplotlib-base-3.3. | 5.1 MB    | ####1      |  42% matplotlib-base-3.3. | 5.1 MB    | ######4    |  64% matplotlib-base-3.3. | 5.1 MB    | ########6  |  87% matplotlib-base-3.3. | 5.1 MB    | ########## | 100% 
-tk-8.6.10            | 2.7 MB    |            |   0% tk-8.6.10            | 2.7 MB    | ###7       |  37% tk-8.6.10            | 2.7 MB    | #######9   |  80% tk-8.6.10            | 2.7 MB    | ########## | 100% 
-qtconsole-4.7.7      | 96 KB     |            |   0% qtconsole-4.7.7      | 96 KB     | ########## | 100% 
-boto-2.49.0          | 1.2 MB    |            |   0% boto-2.49.0          | 1.2 MB    | 1          |   1% boto-2.49.0          | 1.2 MB    | ####1      |  41% boto-2.49.0          | 1.2 MB    | ########## | 100% 
-sortedcollections-1. | 13 KB     |            |   0% sortedcollections-1. | 13 KB     | ########## | 100% 
-zope-1.0             | 5 KB      |            |   0% zope-1.0             | 5 KB      | ########## | 100% 
-sphinx-3.2.1         | 1.1 MB    |            |   0% sphinx-3.2.1         | 1.1 MB    | ########8  |  89% sphinx-3.2.1         | 1.1 MB    | ########## | 100% 
-libarchive-3.4.2     | 1.7 MB    |            |   0% libarchive-3.4.2     | 1.7 MB    | #####8     |  59% libarchive-3.4.2     | 1.7 MB    | ########## | 100% 
-pandoc-2.11          | 14.4 MB   |            |   0% pandoc-2.11          | 14.4 MB   | 6          |   7% pandoc-2.11          | 14.4 MB   | #4         |  15% pandoc-2.11          | 14.4 MB   | ##2        |  23% pandoc-2.11          | 14.4 MB   | ###        |  30% pandoc-2.11          | 14.4 MB   | ###8       |  38% pandoc-2.11          | 14.4 MB   | ####6      |  46% pandoc-2.11          | 14.4 MB   | #####4     |  54% pandoc-2.11          | 14.4 MB   | ######1    |  62% pandoc-2.11          | 14.4 MB   | ######9    |  70% pandoc-2.11          | 14.4 MB   | #######7   |  78% pandoc-2.11          | 14.4 MB   | ########5  |  86% pandoc-2.11          | 14.4 MB   | #########3 |  94% pandoc-2.11          | 14.4 MB   | ########## | 100% 
-icu-58.2             | 9.4 MB    |            |   0% icu-58.2             | 9.4 MB    | #          |  11% icu-58.2             | 9.4 MB    | ##3        |  23% icu-58.2             | 9.4 MB    | ###5       |  35% icu-58.2             | 9.4 MB    | ####7      |  47% icu-58.2             | 9.4 MB    | #####9     |  59% icu-58.2             | 9.4 MB    | #######1   |  72% icu-58.2             | 9.4 MB    | ########3  |  84% icu-58.2             | 9.4 MB    | #########5 |  96% icu-58.2             | 9.4 MB    | ########## | 100% 
-xlsxwriter-1.3.7     | 108 KB    |            |   0% xlsxwriter-1.3.7     | 108 KB    | ########## | 100% 
-threadpoolctl-2.1.0  | 17 KB     |            |   0% threadpoolctl-2.1.0  | 17 KB     | ########## | 100% 
-jsonschema-3.2.0     | 47 KB     |            |   0% jsonschema-3.2.0     | 47 KB     | ########## | 100% 
-wcwidth-0.2.5        | 29 KB     |            |   0% wcwidth-0.2.5        | 29 KB     | ########## | 100% 
-async_generator-1.10 | 24 KB     |            |   0% async_generator-1.10 | 24 KB     | ########## | 100% 
-pandas-1.1.3         | 7.5 MB    |            |   0% pandas-1.1.3         | 7.5 MB    | #3         |  13% pandas-1.1.3         | 7.5 MB    | ##8        |  29% pandas-1.1.3         | 7.5 MB    | ####3      |  44% pandas-1.1.3         | 7.5 MB    | #####8     |  59% pandas-1.1.3         | 7.5 MB    | #######3   |  74% pandas-1.1.3         | 7.5 MB    | ########9  |  89% pandas-1.1.3         | 7.5 MB    | ########## | 100% 
-numexpr-2.7.1        | 127 KB    |            |   0% numexpr-2.7.1        | 127 KB    | #2         |  13% numexpr-2.7.1        | 127 KB    | ########## | 100% 
-mistune-0.8.4        | 55 KB     |            |   0% mistune-0.8.4        | 55 KB     | ##9        |  29% mistune-0.8.4        | 55 KB     | ########## | 100% 
-sphinxcontrib-serial | 24 KB     |            |   0% sphinxcontrib-serial | 24 KB     | ########## | 100% 
-xlwt-1.3.0           | 160 KB    |            |   0% xlwt-1.3.0           | 160 KB    | 9          |  10% xlwt-1.3.0           | 160 KB    | ########## | 100% 
-pycodestyle-2.6.0    | 43 KB     |            |   0% pycodestyle-2.6.0    | 43 KB     | ########## | 100% 
-qdarkstyle-2.8.1     | 176 KB    |            |   0% qdarkstyle-2.8.1     | 176 KB    | ########## | 100% 
-prometheus_client-0. | 47 KB     |            |   0% prometheus_client-0. | 47 KB     | ########## | 100% 
-mpmath-1.1.0         | 777 KB    |            |   0% mpmath-1.1.0         | 777 KB    | 2          |   2% mpmath-1.1.0         | 777 KB    | ####1      |  41% mpmath-1.1.0         | 777 KB    | ########## | 100% 
-mkl-service-2.3.0    | 50 KB     |            |   0% mkl-service-2.3.0    | 50 KB     | ########## | 100% 
-pathlib2-2.3.5       | 36 KB     |            |   0% pathlib2-2.3.5       | 36 KB     | ####4      |  44% pathlib2-2.3.5       | 36 KB     | ########## | 100% 
-numba-0.51.2         | 3.1 MB    |            |   0% numba-0.51.2         | 3.1 MB    | ###2       |  32% numba-0.51.2         | 3.1 MB    | ######8    |  68% numba-0.51.2         | 3.1 MB    | ########## | 100% 
-pandocfilters-1.4.3  | 14 KB     |            |   0% pandocfilters-1.4.3  | 14 KB     | ########## | 100% 
-tqdm-4.50.2          | 56 KB     |            |   0% tqdm-4.50.2          | 56 KB     | ########## | 100% 
-pytz-2020.1          | 184 KB    |            |   0% pytz-2020.1          | 184 KB    | ########## | 100% 
-rope-0.18.0          | 126 KB    |            |   0% rope-0.18.0          | 126 KB    | ########## | 100% 
-regex-2020.10.15     | 298 KB    |            |   0% regex-2020.10.15     | 298 KB    | ########## | 100% 
-locket-0.2.0         | 9 KB      |            |   0% locket-0.2.0         | 9 KB      | ########## | 100% 
-lzo-2.10             | 142 KB    |            |   0% lzo-2.10             | 142 KB    | ########## | 100% 
-pycurl-7.43.0.6      | 65 KB     |            |   0% pycurl-7.43.0.6      | 65 KB     | ########## | 100% 
-json5-0.9.5          | 22 KB     |            |   0% json5-0.9.5          | 22 KB     | ########## | 100% 
-yapf-0.30.0          | 127 KB    |            |   0% yapf-0.30.0          | 127 KB    | ########## | 100% 
-cffi-1.14.3          | 223 KB    |            |   0% cffi-1.14.3          | 223 KB    | ########## | 100% 
-zope.interface-5.1.2 | 280 KB    |            |   0% zope.interface-5.1.2 | 280 KB    | ########## | 100% 
-xlwings-0.20.8       | 735 KB    |            |   0% xlwings-0.20.8       | 735 KB    | ########## | 100% 
-py-1.9.0             | 79 KB     |            |   0% py-1.9.0             | 79 KB     | ########## | 100% 
-llvmlite-0.34.0      | 12.4 MB   |            |   0% llvmlite-0.34.0      | 12.4 MB   | 8          |   8% llvmlite-0.34.0      | 12.4 MB   | #7         |  17% llvmlite-0.34.0      | 12.4 MB   | ##6        |  27% llvmlite-0.34.0      | 12.4 MB   | ###5       |  36% llvmlite-0.34.0      | 12.4 MB   | ####4      |  45% llvmlite-0.34.0      | 12.4 MB   | #####4     |  54% llvmlite-0.34.0      | 12.4 MB   | ######3    |  63% llvmlite-0.34.0      | 12.4 MB   | #######2   |  73% llvmlite-0.34.0      | 12.4 MB   | ########1  |  82% llvmlite-0.34.0      | 12.4 MB   | #########1 |  91% llvmlite-0.34.0      | 12.4 MB   | ########## | 100% 
-imageio-2.9.0        | 3.0 MB    |            |   0% imageio-2.9.0        | 3.0 MB    | ###2       |  33% imageio-2.9.0        | 3.0 MB    | #######    |  70% imageio-2.9.0        | 3.0 MB    | ########## | 100% 
-vs2015_runtime-14.16 | 1.2 MB    |            |   0% vs2015_runtime-14.16 | 1.2 MB    | ########6  |  86% vs2015_runtime-14.16 | 1.2 MB    | ########## | 100% 
-ipykernel-5.3.4      | 182 KB    |            |   0% ipykernel-5.3.4      | 182 KB    | ########## | 100% 
-Preparing transaction: ...working... done
-Verifying transaction: ...working... done
-Executing transaction: ...working... b" \nEdit C:\\Users\\David\\.conda\\envs\\vCapiPy\\Library\\modeller\\modlib\\modeller\\config.py \nand replace XXXX with your Modeller license key, \nor set the KEY_MODELLER environment variable before running 'conda install'. \n \n"
-done
-Ran pip subprocess with arguments:
-['C:\\Users\\David\\.conda\\envs\\vCapiPy\\python.exe', '-m', 'pip', 'install', '-U', '-r', 'F:\\CapiPy_v.0.0.2\\Environment\\condaenv.rfie51s1.requirements.txt']
-Pip subprocess output:
-Collecting biopython==1.77
-  Using cached biopython-1.77-cp38-cp38-win_amd64.whl (2.3 MB)
-Processing c:\users\david\appdata\local\pip\cache\wheels\37\f4\78\7d3fe99fd30c543604765b7aa262c812c5bed406b2edd428ff\metapub-0.5.5-py3-none-any.whl
-Collecting more-itertools==8.4.0
-  Using cached more_itertools-8.4.0-py3-none-any.whl (43 kB)
-Collecting numpy==1.19.0
-  Using cached numpy-1.19.0-cp38-cp38-win_amd64.whl (13.0 MB)
-Collecting PySimpleGUI==4.29.0
-  Using cached PySimpleGUI-4.29.0-py3-none-any.whl (357 kB)
-Processing c:\users\david\appdata\local\pip\cache\wheels\a8\da\22\2970e270912ba623ccac7d516b7411a820c8f2b4252463a605\python_levenshtein-0.12.0-cp38-cp38-win_amd64.whl
-Collecting tox
-  Downloading tox-3.20.1-py2.py3-none-any.whl (83 kB)
-Requirement already satisfied, skipping upgrade: setuptools in c:\users\david\.conda\envs\vcapipy\lib\site-packages (from metapub==0.5.5->-r F:\CapiPy_v.0.0.2\Environment\condaenv.rfie51s1.requirements.txt (line 2)) (50.3.1.post20201107)
-Collecting tabulate
-  Using cached tabulate-0.8.7-py3-none-any.whl (24 kB)
-Collecting cssselect
-  Using cached cssselect-1.1.0-py2.py3-none-any.whl (16 kB)
-Requirement already satisfied, skipping upgrade: six in c:\users\david\.conda\envs\vcapipy\lib\site-packages (from metapub==0.5.5->-r F:\CapiPy_v.0.0.2\Environment\condaenv.rfie51s1.requirements.txt (line 2)) (1.15.0)
-Requirement already satisfied, skipping upgrade: pytest in c:\users\david\.conda\envs\vcapipy\lib\site-packages (from metapub==0.5.5->-r F:\CapiPy_v.0.0.2\Environment\condaenv.rfie51s1.requirements.txt (line 2)) (0.0.0)
-Collecting habanero
-  Using cached habanero-0.7.4-py2.py3-none-any.whl (35 kB)
-Requirement already satisfied, skipping upgrade: lxml in c:\users\david\.conda\envs\vcapipy\lib\site-packages (from metapub==0.5.5->-r F:\CapiPy_v.0.0.2\Environment\condaenv.rfie51s1.requirements.txt (line 2)) (4.6.1)
-Collecting coloredlogs
-  Using cached coloredlogs-14.0-py2.py3-none-any.whl (43 kB)
-Collecting unidecode
-  Using cached Unidecode-1.1.1-py2.py3-none-any.whl (238 kB)
-Processing c:\users\david\appdata\local\pip\cache\wheels\56\ea\58\ead137b087d9e326852a851351d1debf4ada529b6ac0ec4e8c\docopt-0.6.2-py2.py3-none-any.whl
-Requirement already satisfied, skipping upgrade: requests in c:\users\david\.conda\envs\vcapipy\lib\site-packages (from metapub==0.5.5->-r F:\CapiPy_v.0.0.2\Environment\condaenv.rfie51s1.requirements.txt (line 2)) (2.24.0)
-Collecting eutils
-  Using cached eutils-0.6.0-py2.py3-none-any.whl (41 kB)
-Requirement already satisfied, skipping upgrade: colorama>=0.4.1; platform_system == "Windows" in c:\users\david\.conda\envs\vcapipy\lib\site-packages (from tox->metapub==0.5.5->-r F:\CapiPy_v.0.0.2\Environment\condaenv.rfie51s1.requirements.txt (line 2)) (0.4.4)
-Collecting virtualenv!=20.0.0,!=20.0.1,!=20.0.2,!=20.0.3,!=20.0.4,!=20.0.5,!=20.0.6,!=20.0.7,>=16.0.0
-  Downloading virtualenv-20.1.0-py2.py3-none-any.whl (4.9 MB)
-Requirement already satisfied, skipping upgrade: py>=1.4.17 in c:\users\david\.conda\envs\vcapipy\lib\site-packages (from tox->metapub==0.5.5->-r F:\CapiPy_v.0.0.2\Environment\condaenv.rfie51s1.requirements.txt (line 2)) (1.9.0)
-Requirement already satisfied, skipping upgrade: pluggy>=0.12.0 in c:\users\david\.conda\envs\vcapipy\lib\site-packages (from tox->metapub==0.5.5->-r F:\CapiPy_v.0.0.2\Environment\condaenv.rfie51s1.requirements.txt (line 2)) (0.13.1)
-Requirement already satisfied, skipping upgrade: packaging>=14 in c:\users\david\.conda\envs\vcapipy\lib\site-packages (from tox->metapub==0.5.5->-r F:\CapiPy_v.0.0.2\Environment\condaenv.rfie51s1.requirements.txt (line 2)) (20.4)
-Requirement already satisfied, skipping upgrade: filelock>=3.0.0 in c:\users\david\.conda\envs\vcapipy\lib\site-packages (from tox->metapub==0.5.5->-r F:\CapiPy_v.0.0.2\Environment\condaenv.rfie51s1.requirements.txt (line 2)) (3.0.12)
-Requirement already satisfied, skipping upgrade: toml>=0.9.4 in c:\users\david\.conda\envs\vcapipy\lib\site-packages (from tox->metapub==0.5.5->-r F:\CapiPy_v.0.0.2\Environment\condaenv.rfie51s1.requirements.txt (line 2)) (0.10.1)
-Requirement already satisfied, skipping upgrade: attrs>=17.4.0 in c:\users\david\.conda\envs\vcapipy\lib\site-packages (from pytest->metapub==0.5.5->-r F:\CapiPy_v.0.0.2\Environment\condaenv.rfie51s1.requirements.txt (line 2)) (20.3.0)
-Requirement already satisfied, skipping upgrade: iniconfig in c:\users\david\.conda\envs\vcapipy\lib\site-packages (from pytest->metapub==0.5.5->-r F:\CapiPy_v.0.0.2\Environment\condaenv.rfie51s1.requirements.txt (line 2)) (1.1.1)
-Requirement already satisfied, skipping upgrade: atomicwrites>=1.0 in c:\users\david\.conda\envs\vcapipy\lib\site-packages (from pytest->metapub==0.5.5->-r F:\CapiPy_v.0.0.2\Environment\condaenv.rfie51s1.requirements.txt (line 2)) (1.4.0)
-Requirement already satisfied, skipping upgrade: tqdm in c:\users\david\.conda\envs\vcapipy\lib\site-packages (from habanero->metapub==0.5.5->-r F:\CapiPy_v.0.0.2\Environment\condaenv.rfie51s1.requirements.txt (line 2)) (4.50.2)
-Collecting humanfriendly>=7.1
-  Using cached humanfriendly-8.2-py2.py3-none-any.whl (86 kB)
-Requirement already satisfied, skipping upgrade: certifi>=2017.4.17 in c:\users\david\.conda\envs\vcapipy\lib\site-packages (from requests->metapub==0.5.5->-r F:\CapiPy_v.0.0.2\Environment\condaenv.rfie51s1.requirements.txt (line 2)) (2020.6.20)
-Requirement already satisfied, skipping upgrade: idna<3,>=2.5 in c:\users\david\.conda\envs\vcapipy\lib\site-packages (from requests->metapub==0.5.5->-r F:\CapiPy_v.0.0.2\Environment\condaenv.rfie51s1.requirements.txt (line 2)) (2.10)
-Requirement already satisfied, skipping upgrade: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in c:\users\david\.conda\envs\vcapipy\lib\site-packages (from requests->metapub==0.5.5->-r F:\CapiPy_v.0.0.2\Environment\condaenv.rfie51s1.requirements.txt (line 2)) (1.25.11)
-Requirement already satisfied, skipping upgrade: chardet<4,>=3.0.2 in c:\users\david\.conda\envs\vcapipy\lib\site-packages (from requests->metapub==0.5.5->-r F:\CapiPy_v.0.0.2\Environment\condaenv.rfie51s1.requirements.txt (line 2)) (3.0.4)
-Requirement already satisfied, skipping upgrade: pytz in c:\users\david\.conda\envs\vcapipy\lib\site-packages (from eutils->metapub==0.5.5->-r F:\CapiPy_v.0.0.2\Environment\condaenv.rfie51s1.requirements.txt (line 2)) (2020.1)
-Collecting appdirs<2,>=1.4.3
-  Using cached appdirs-1.4.4-py2.py3-none-any.whl (9.6 kB)
-Collecting distlib<1,>=0.3.1
-  Using cached distlib-0.3.1-py2.py3-none-any.whl (335 kB)
-Requirement already satisfied, skipping upgrade: pyparsing>=2.0.2 in c:\users\david\.conda\envs\vcapipy\lib\site-packages (from packaging>=14->tox->metapub==0.5.5->-r F:\CapiPy_v.0.0.2\Environment\condaenv.rfie51s1.requirements.txt (line 2)) (2.4.7)
-Requirement already satisfied, skipping upgrade: pyreadline; sys_platform == "win32" in c:\users\david\.conda\envs\vcapipy\lib\site-packages (from humanfriendly>=7.1->coloredlogs->metapub==0.5.5->-r F:\CapiPy_v.0.0.2\Environment\condaenv.rfie51s1.requirements.txt (line 2)) (2.1)
-Installing collected packages: numpy, biopython, python-Levenshtein, appdirs, distlib, virtualenv, tox, tabulate, cssselect, habanero, humanfriendly, coloredlogs, unidecode, docopt, eutils, metapub, more-itertools, PySimpleGUI
-  Attempting uninstall: numpy
-    Found existing installation: numpy 1.19.2
-    Uninstalling numpy-1.19.2:
-      Successfully uninstalled numpy-1.19.2
-  Attempting uninstall: more-itertools
-    Found existing installation: more-itertools 8.6.0
-    Uninstalling more-itertools-8.6.0:
-      Successfully uninstalled more-itertools-8.6.0
-Successfully installed PySimpleGUI-4.29.0 appdirs-1.4.4 biopython-1.77 coloredlogs-14.0 cssselect-1.1.0 distlib-0.3.1 docopt-0.6.2 eutils-0.6.0 habanero-0.7.4 humanfriendly-8.2 metapub-0.5.5 more-itertools-8.4.0 numpy-1.19.0 python-Levenshtein-0.12.0 tabulate-0.8.7 tox-3.20.1 unidecode-1.1.1 virtualenv-20.1.0
-
-#
-# To activate this environment, use
-#
-#     $ conda activate vCapiPy
-#
-# To deactivate an active environment, use
-#
-#     $ conda deactivate
-
-
-CondaValueError: prefix already exists: C:\Users\David\.conda\envs\vCapiPy
-
-        1 file(s) copied.
-        1 file(s) copied.
-Problem fixing the Residue.py file. Refer to the instructions and fix it manually!
-Fixed modeller init and config file.
-Problem fixing the Residue.py file. Refer to the instructions and fix it manually!
-Fixed modeller init and config file.
-
