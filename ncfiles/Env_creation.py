@@ -11,12 +11,12 @@ full_path = os.path.realpath(__file__)
 print("Locating the .yml file...")
 path, filename = os.path.split(full_path)
 
+log = open("ENV-CREATION.log", "w+")
 print("Starting creation of vCapiPy environment...")
-
-sys.stdout = open("install.log", "w")
+print("Starting creation of vCapiPy environment...", file="ENV-CREATION.log")
 
 cmd = "conda env create -f \"" + path + "/vCapiPy.yml\""
+sys.stdout, sys.stderr = log
 os.system(cmd)
-sys.stdout.close()
 
 print("All done, check the install.log file for errors!")
