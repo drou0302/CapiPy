@@ -41,26 +41,26 @@ Automatically installed following the standard installation:
 ### Standard installation:
 Install it locally by unpacking the content of the downloaded zip file.
 - If your OS is Windows, double click on the Install_CapiPy.bat and follow the instructions or open a terminal and type:
-'''
+```
 $ cd ../CapiPy-main
 $ ./Install_CapiPy.bat
-'''
+```
 - If your OS is Linux-based or MacOS, open a terminal window and type:
-'''
+```
 $ cd ../CapiPy-main
 $ chmod u+x Install_CapiPy.sh
 $ ./Install_CapiPy.sh
-'''
+```
 
 ### Running CapiPy:
 To run CapiPy:
 - If your OS is Windows, double click on the CapiPy.bat
 - If your OS is Linux-based or MacOS:
-'''
+```
 $ cd ../CapiPy-main
 $ chmod u+x CapiPy.sh
 $ ./CapiPy.sh
-'''
+```
 or double click on the CapiPy.sh file and select open with Terminal.
 
 
