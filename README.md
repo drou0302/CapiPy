@@ -2,7 +2,7 @@
 ## Table of contents:
 * [Introduction](#intro)
 * [Technologies](#technologies)
-* [Setup](#setup)
+* [Installation and setup](#setup)
 * [Troubleshooting](#troubleshooting)
 
 ## Introduction: What is CapiPy?
