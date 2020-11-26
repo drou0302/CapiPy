@@ -75,6 +75,27 @@ $ ./CapiPy.sh
 ```
 or double click on the CapiPy.sh file and select open with Terminal.
 
+On the first use, make sure to check the configuration tab to tell CapiPy where to find PyMOL, ClustalW, a generic text editor and a CSV reader.
+The default values are:
+- Windows: 
+    - C:/PyMOL/PyMOLWin.exe
+    - C:/Program Files (x86)/ClustalW2/clustalw2.exe
+    - C/Windows/system32/notepad.exe
+    - C/Windows/system32/notepad.exe
+    - C:/Program Files/Microsoft Office/root/Office16/EXCEL.EXE
+- MacOS:
+    - /Applications/Pymol.app
+    - /Applications/clustalw2
+    - /Applications/TextEdit.app
+    - /Applications/Microsoft Excel.app
+- Linux:
+    - pymol
+    - clustalw
+    - gedit
+    - soffice -calc
+
+## Troubleshooting
+
 | Error | Troubleshoot |
 | ---|---|
 | CondaValueError: Value error: prefix already exists: | An environment with the same name already exists. Please delete it either by running the Uninstall.bat / Uninstall.sh file or run in a terminal: ````conda env remove --name vCapiPy````|
