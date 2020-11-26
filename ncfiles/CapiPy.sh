@@ -1,4 +1,4 @@
 #!/bin/bash
 source activate vCapiPy
-python ./CapiPy/GUI.py
+python CapiPy.zip
 conda deactivate
