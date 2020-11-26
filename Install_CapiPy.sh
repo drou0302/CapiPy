@@ -3,7 +3,7 @@ echo "Indicate the full location of conda.sh"
 read $CONDA 
 source $CONDA
 echo Creating vCapPy environment...
-conda env create -f ./Environment/vCapiPy.yml > ./ENV-CREATION.log 
+conda env create -f ./ncfiles/vCapiPy.yml > ./ENV-CREATION.log 
 echo Environment created.
 echo ____________________________________________________________________________
 
