@@ -94,8 +94,8 @@ def main():
             os.remove(lic_file)
             shutil.copyfile(lic_replace, lic_file)
             os.remove(lic_replace)
-            print("Fixed modeller init and config file.")
-            print("Fixed modeller init and config file.", file=log)
+            print("Fixed modeller config file.")
+            print("Fixed modeller config file.", file=log)
         except BaseException:
             print("Problem entering the modeller license. Refer to the instructions and fix it manually!")
             print("Problem entering the modeller license. Refer to the instructions and fix it manually!", file=log)
