@@ -59,7 +59,8 @@ Included in the standard installation:
     or double click on the CapiPy.sh file and select open with Terminal.
 
 - __Option 2: Add CapiPy as a package in your current python installation:__ _(TEST VERSION)_
-    If you don't want to create a new environment, which is recomended, you can install CapiPy along with the necessary packages using pip. _Make sure you have             python 3.6 or later!_
+    
+    If you don't want to create a new environment, which is recomended, you can install CapiPy along with the necessary packages using pip. _Make sure you have            python 3.6 or later!_
     - To check you python version, open a terminal and type:
     ```
     $ python -V
