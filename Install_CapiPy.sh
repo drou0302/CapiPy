@@ -7,7 +7,7 @@ conda env create -f ./ncfiles/vCapiPy.yml > ./ENV-CREATION.log
 echo Environment created.
 echo ____________________________________________________________________________
 
-cp Environment/*.sh ../
+mv ./ncfiles/CapiPy.sh ./
 echo "Enter your MODELLER license (https://salilab.org/modeller/registration.html):"
 read $LICENSE 
 python ./ncfiles/file_modification.py $1 $LICENSE > CON
