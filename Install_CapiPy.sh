@@ -10,7 +10,7 @@ echo ___________________________________________________________________________
 cp Environment/*.sh ../
 echo "Enter your MODELLER license (https://salilab.org/modeller/registration.html):"
 read $LICENSE 
-python ./Environment/file_modification.py $1 $LICENSE > CON
+python ./ncfiles/file_modification.py $1 $LICENSE > CON
 echo File modification finished...
 echo ____________________________________________________________________________
 
