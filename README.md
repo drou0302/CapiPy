@@ -38,47 +38,52 @@ Included in the standard installation:
     - numpy 1.19.0
     - PySimpleGUI 4.29.0
 ## Installation and setup:
-__Option 1: Create a separate environment using Anaconda - EASY INSTALLATION__
-Donwload the content of this repository and unpack the downloaded zip file.
-* If your OS is Windows, double click on the Install_CapiPy.bat and follow the instructions.
-* If your OS is Linux-based or MacOS, open a terminal window and type:
-```
-$ cd ../CapiPy-main
-$ chmod +x Install_CapiPy.sh
-$ ./Install_CapiPy.sh
-```
-__Option 2: Add CapiPy as a package in your current python installation:__ _(TEST VERSION)_
-If you don't want to create a new environment, which is recomended, you can install CapiPy along with the necessary packages using pip. _Make sure you have python 3.6 or later!_
-- To check you python version, open a terminal and type:
-```
-$ python -V
-```
-If your version is python 3.6 or later, continue with the installation. If not, please update your python. 
-- Once you have Python 3.6 or later, run the following command to install pip (if not installed already):
-```
-$ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-$ python get-pip.py
-```
-- To install the necessary packages, type:
-```
-pip install biopython metapub more-itertools PySimpleGUI CapiPy
-```
-- And finally, to instal CapiPy, enter:
-```
-pip install CapiPy
-```
+- __Option 1: Create a separate environment using Anaconda - EASY INSTALLATION__
+    Donwload the content of this repository and unpack the downloaded zip file.
+    * If your OS is Windows, double click on the Install_CapiPy.bat and follow the instructions.
+    * If your OS is Linux-based or MacOS, open a terminal window and type:
+    ```
+    $ cd ../CapiPy-main
+    $ chmod +x Install_CapiPy.sh
+    $ ./Install_CapiPy.sh
+    ```
+    ### Running CapiPy:
+    To run CapiPy:
+    - If your OS is Windows, double click on the CapiPy.bat
+    - If your OS is Linux-based or MacOS:
+    ```
+    $ cd ../CapiPy-main
+    $ chmod u+x CapiPy.sh
+    $ ./CapiPy.sh
+    ```
+    or double click on the CapiPy.sh file and select open with Terminal.
 
-### Running CapiPy:
-To run CapiPy:
-- If your OS is Windows, double click on the CapiPy.bat
-- If your OS is Linux-based or MacOS:
-```
-$ cd ../CapiPy-main
-$ chmod u+x CapiPy.sh
-$ ./CapiPy.sh
-```
-or double click on the CapiPy.sh file and select open with Terminal.
-
+- __Option 2: Add CapiPy as a package in your current python installation:__ _(TEST VERSION)_
+    If you don't want to create a new environment, which is recomended, you can install CapiPy along with the necessary packages using pip. _Make sure you have             python 3.6 or later!_
+    - To check you python version, open a terminal and type:
+    ```
+    $ python -V
+    ```
+    If your version is python 3.6 or later, continue with the installation. If not, please update your python. 
+    - Once you have Python 3.6 or later, run the following command to install pip (if not installed already):
+    ```
+    $ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+    $ python get-pip.py
+    ```
+    - To install the necessary packages, type:
+    ```
+    $ pip install biopython metapub more-itertools PySimpleGUI CapiPy
+    ```
+    - And finally, to instal CapiPy, enter:
+    ```
+    $ pip install CapiPy
+    ```
+     ### Running CapiPy:
+    To run CapiPy:
+    ```
+    $ python -m CapiPy
+    ```
+### Configuration (first use only):
 On the first use, make sure to check the configuration tab to tell CapiPy where to find PyMOL, ClustalW, a generic text editor and a CSV reader.
 The default values are:
 - Windows: 
