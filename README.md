@@ -86,7 +86,8 @@ Included in the standard installation:
     ```
     $ python -m CapiPy
     ```
-### Configuration (first use only):
+### Configuration 
+
 On the first use, make sure to check the configuration tab to tell CapiPy where to find PyMOL, ClustalW, a generic text editor and a CSV reader.
 The default values are:
 - Windows: 
