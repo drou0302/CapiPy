@@ -37,7 +37,7 @@ Included in the standard installation:
     - more-itertools 8.4.0
     - numpy 1.19.0
     - PySimpleGUI 4.29.0
-## Installation and setup:
+## Installation and setup
 - __Option 1: Create a separate environment using Anaconda - EASY INSTALLATION__
     Donwload the content of this repository and unpack the downloaded zip file.
     * If your OS is Windows, double click on the Install_CapiPy.bat and follow the instructions.
