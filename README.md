@@ -1,8 +1,9 @@
 # CapiPy
 ## Table of contents:
-* [Introduction](#intro)
+* [Introduction: What is CapiPy?](#intro)
 * [Technologies](#technologies)
 * [Installation and setup](#setup)
+* [Configuration](#config)
 * [Troubleshooting](#troubleshooting)
 
 ## Introduction: What is CapiPy?
