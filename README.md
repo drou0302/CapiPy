@@ -1,12 +1,13 @@
 # CapiPy
 ## Table of contents:
-* [Introduction: What is CapiPy?](#intro)
+* [Introduction](#introduction)
 * [Technologies](#technologies)
-* [Installation](#setup)
-    * [Configuration](#config)
+* [Installation](#installation)
+    * [Configuration](#configuration)
 * [Troubleshooting](#troubleshooting)
 
-## Introduction: What is CapiPy?
+## Introduction: 
+__What is CapiPy?__
 CapiPy (Computer Assistance for Protein Immobilisation – Python) is a small collection of 4 main packages to retrieve useful information for the immobilisation of a query protein.	 
 Information from each module, specially the Blast and modeller is preferentially used by the others. In case no such information is given, the user will have to input the necessary information.
 
