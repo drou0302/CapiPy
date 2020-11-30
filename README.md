@@ -132,3 +132,4 @@ The default values are:
 | Error | Troubleshoot |
 | ---|---|
 |Cannot execute .sh files | You need to make the .sh file executable first with the command ``` chmod +x scriptname.sh``` |
+|Cannot create a file when that file already exists | You are trying to run CapiPy and create a folder with a name that already exists in your current working directory |
