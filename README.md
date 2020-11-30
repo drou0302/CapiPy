@@ -73,7 +73,7 @@ Included in the standard installation:
     ```
     - To install the necessary packages, type:
     ```
-    $ pip install biopython metapub more-itertools PySimpleGUI CapiPy
+    $ pip install biopython metapub more-itertools PySimpleGUI
     ```
     - And finally, to instal CapiPy, enter:
     ```
