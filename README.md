@@ -114,7 +114,7 @@ The default values are:
 | Error | Troubleshoot |
 | ---|---|
 | CondaValueError: Value error: prefix already exists: | An environment with the same name already exists. Please delete it either by running the Uninstall.bat / Uninstall.sh file or run in a terminal: ````conda env remove --name vCapiPy````|
-| Installation fails with error related to Python Levenshtein   | Make sure you have installed Microsoft Visual Studio and downloaded the default C++ modules, including: MSVC build tools and Windows 10 SDK|
+| Installation fails with error related to Python Levenshtein   | Make sure you have installed Microsoft Visual Studio and downloaded the default C++ modules, including: MSVC build tools and Windows 10 SDK. If you are still having the error, install Python levenshtein from the wheel file directly. You can find those in https://www.lfd.uci.edu/~gohlke/pythonlibs/#python-levenshtein. |
 |Cannot fix the Residue.py file|Copy manually the Residue.py provided in the Environment folder to PATHtoCONDA\envs\vCapiPy\lib\site-packages\Bio\PDB\|
 |Cannot fix the \_\_init\_\_.py Modeller|Go to the modeller folder (PATHtoCONDA\envs\vCapiPy\Library\modeller\modlib\modeller\) and manually edit the \_\_init\_\_.py file in line 68 to read: dpath = config.install_dir + '\\modlib\\'  __Make sure you do not change the indentation!__ |
 | Cannot fix the config file from Modeller | Go to the modeller folder (PATHtoCONDA\envs\vCapiPy\Library\modeller\modlib\modeller\) and manually edit the config file. Replace the XXXX after license to your modeller license code. |
