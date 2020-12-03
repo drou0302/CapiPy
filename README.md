@@ -126,7 +126,7 @@ The default values are:
 | Error | Troubleshoot |
 | ---|---|
 | blastp not recognized as an internal or external command.   | Check that the folder containing the executable (PATH/blast-2.XX-/bin) is in your PATH variables.  |
-| Local BLAST search does not work | Check that the databases are in the correct location and the ncbi.ini file is in the blast/bin folder. |
+| Local BLAST search does not work | Check that the databases are in the correct location and the ncbi.ini file is in the blast/bin folder and it points to the database folder. More information here https://www.ncbi.nlm.nih.gov/books/NBK279695/|
 | Web BLAST search does not work or takes long time | Try again in a few minutes. Online BLAST depends on the server availability. |
 | Modeller license is missing | Content Cell  |
 | Modeller cannot find the specified location | Content Cell  |
