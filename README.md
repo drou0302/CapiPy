@@ -27,11 +27,12 @@ __MODULE 3.1:__ CLUSTER DISTANCE: once the clusters have been identified, simila
 
 ## Technologies:
 External software requirements:
--	Anaconda (miniconda or anaconda) - https://www.anaconda.com/products/individual
+- Anaconda (miniconda or anaconda) - https://www.anaconda.com/products/individual
 - PyMOL - https://pymol.org/2/ or https://sourceforge.net/projects/pymol/files/latest/download
 - Visual studio C++ tools - https://visualstudio.microsoft.com/downloads/
 - Clustalw - http://clustal.org/clustal2/
 - Blast 2.XX - https://www.ncbi.nlm.nih.gov/books/NBK279671/
+- Modeller - https://salilab.org/modeller/
 Included in the standard installation:
 - Python 3.7 or later including:
     - biopython 1.77
@@ -116,7 +117,7 @@ The default values are:
 | CondaValueError: Value error: prefix already exists: | An environment with the same name already exists. Please delete it either by running the Uninstall.bat / Uninstall.sh file or run in a terminal: ````conda env remove --name vCapiPy````|
 | Installation fails with error related to Python Levenshtein   | Make sure you have installed Microsoft Visual Studio and downloaded the default C++ modules, including: MSVC build tools and Windows 10 SDK. If you are still having the error, install Python levenshtein from the wheel file directly. You can find those in https://www.lfd.uci.edu/~gohlke/pythonlibs/#python-levenshtein. If you are trying to install CapiPy in a conda environment open the terminal and type: ``` $ conda activate vCapiPy ; $ cd PATH/TO/python-Levenshtein-0.12.0-cpXX-cpXX-win_amd64.whl ; $ pip install python-Levenshtein-0.12.0-cpXX-cpXX-win_amd64.whl```|
 |Cannot fix the Residue.py file|Copy manually the Residue.py provided in the Environment folder to PATHtoCONDA\envs\vCapiPy\lib\site-packages\Bio\PDB\|
-|Cannot fix the \_\_init\_\_.py Modeller|Go to the modeller folder (PATHtoCONDA\envs\vCapiPy\Library\modeller\modlib\modeller\) and manually edit the \_\_init\_\_.py file in line 68 to read: dpath = config.install_dir + '\\modlib\\'  __Make sure you do not change the indentation!__ |
+|Cannot fix the \_\_init\_\_.py Modeller|Go to the modeller folder (PATHtoCONDA\envs\vCapiPy\Library\modeller\modlib\modeller\) and manually edit the \_\_init\_\_.py file in line 68 to read: dpath = config.install_dir + '\\modlib\\'  __Make sure you do not change the indentation!__. If that doesn't work or the \_\_init\_\_ file doesn't have such information, make sure that the config.py file in the same directory in the first line points to the correct directory of modeller. |
 | Cannot fix the config file from Modeller | Go to the modeller folder (PATHtoCONDA\envs\vCapiPy\Library\modeller\modlib\modeller\) and manually edit the config file. Replace the XXXX after license to your modeller license code. |
 
 
@@ -128,8 +129,8 @@ The default values are:
 | blastp not recognized as an internal or external command.   | Check that the folder containing the executable (PATH/blast-2.XX-/bin) is in your PATH variables.  |
 | Local BLAST search does not work | Check that the databases are in the correct location and the ncbi.ini file is in the blast/bin folder and it points to the database folder. More information here https://www.ncbi.nlm.nih.gov/books/NBK279695/|
 | Web BLAST search does not work or takes long time | Try again in a few minutes. Online BLAST depends on the server availability. |
-| Modeller license is missing | Content Cell  |
-| Modeller cannot find the specified location | Content Cell  |
+| Modeller license is missing | Check the config.py file in your modeller installation. In this file, the second line should read: license = r'XXXX', where XXXX should be your license.|
+| Modeller cannot find the specified location | - Make sure your config.py file of your modeller installation, points out to the correct modeller directory (p.e.: install_dir = r'C:/Users/User/conda/envs/vCapiPy/Library/modeller' for a virtual environment in Windows.- |
 | Clustalw2 not recognized | Make sure clustalw2 is in the Applications folder and this in the PATH variables.|
 
 
