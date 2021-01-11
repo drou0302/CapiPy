@@ -50,6 +50,7 @@ Included in the standard installation:
     $ chmod +x Install_CapiPy.sh
     $ ./Install_CapiPy.sh
     ```
+    _Note: During the installation, a zip file containing the source code will be created. If you modify any of the code in the CapiPy folder, remember to update the zip file also. Otherwise, the changes would not have any effect._
     ### Running CapiPy:
     To run CapiPy:
     - If your OS is Windows, double click on the CapiPy.bat
