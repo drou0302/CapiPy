@@ -120,6 +120,7 @@ The default values are:
 |Cannot fix the Residue.py file|Copy manually the Residue.py provided in the Environment folder to PATHtoCONDA\envs\vCapiPy\lib\site-packages\Bio\PDB\|
 |Cannot fix the \_\_init\_\_.py Modeller|Go to the modeller folder (PATHtoCONDA\envs\vCapiPy\Library\modeller\modlib\modeller\) and manually edit the \_\_init\_\_.py file in line 68 to read: dpath = config.install_dir + '\\modlib\\'  __Make sure you do not change the indentation!__. If that doesn't work or the \_\_init\_\_.py file doesn't have such information, make sure that the config.py file in the same directory in the first line points to the correct directory of modeller. |
 | Cannot fix the config file from Modeller | Go to the modeller folder (PATHtoCONDA\envs\vCapiPy\Library\modeller\modlib\modeller\) and manually edit the config file. Replace the XXXX after license to your modeller license code. |
+|ModuleNotFoundError: No module named 'modeller'| Make sure the modeller locations are part of the PYTHONPATH variable. (Check https://salilab.org/modeller/9.25/release.html)| 
 
 
 
