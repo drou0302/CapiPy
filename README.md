@@ -115,6 +115,7 @@ The default values are:
 
 | Error | Troubleshoot |
 | ---|---|
+| "conda" is not recognized as an internal or external command, operable program or batch file.|Installation will proceed, but with no effect. __Make sure that condabin folder is set in the environmental variables of you system.__|
 | CondaValueError: Value error: prefix already exists: | An environment with the same name already exists. Please delete it either by running the Uninstall.bat / Uninstall.sh file or run in a terminal: ````conda env remove --name vCapiPy````|
 | Installation fails with error related to Python Levenshtein   | Make sure you have installed Microsoft Visual Studio and downloaded the default C++ modules, including: MSVC build tools and Windows 10 SDK. If you are still having the error, install Python levenshtein from the wheel file directly. You can find those in https://www.lfd.uci.edu/~gohlke/pythonlibs/#python-levenshtein. If you are trying to install CapiPy in a conda environment open the terminal and type: ``` $ conda activate vCapiPy ; $ cd PATH/TO/python-Levenshtein-0.12.0-cpXX-cpXX-win_amd64.whl ; $ pip install python-Levenshtein-0.12.0-cpXX-cpXX-win_amd64.whl```|
 |Cannot fix the Residue.py file|Copy manually the Residue.py provided in the Environment folder to PATHtoCONDA\envs\vCapiPy\lib\site-packages\Bio\PDB\|
