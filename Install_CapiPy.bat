@@ -12,7 +12,9 @@ CALL python ./ncfiles/file_modification.py %1 %LICENSE% > CON
 ECHO File modification finished...
 TIMEOUT /t 3 /nobreak > NUL
 ECHO ____________________________________________________________________________
-CALL tar.exe -cf CapiPy.zip CapiPy
+CALL cd CapiPy
+CALL tar.exe -cf CapiPy.zip *
+CALL cd ..
 
 ECHO Installation complete. Check both log files for errors.
 pause
