@@ -15,6 +15,7 @@ ECHO ___________________________________________________________________________
 CALL cd CapiPy
 CALL tar.exe -cf CapiPy.zip *
 CALL cd ..
+MOVE %~dp0\CapiPy\CapiPy.zip %~dp0\ > NUL
 
 ECHO Installation complete. Check both log files for errors.
 pause
