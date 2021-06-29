@@ -392,6 +392,5 @@ def main(folder_name, monomeric_model, multimeric_model, clustalw_exe):
 
     os.chdir(initial_location)
     
-
 if __name__ == "__main__":
-    main(folder_name, monomeric_model, multimeric_model)
+    main(folder_name, monomeric_model, multimeric_model, clustalw_exe)
