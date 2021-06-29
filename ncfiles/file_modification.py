@@ -18,7 +18,7 @@ def main():
         if "vCapiPy" in dir:
             environmentloc = os.path.join(root, "vCapiPy")
     print("Location found. Your environment is located here: " + str(environmentloc))
-    print("Location found. Your environment is located here: " + str(environmentloc),file=log)
+    print("Location found. Your environment is located here: " + str(environmentloc), file = log)
     time.sleep(3)
 
     # Replace Bio.PDB Residue.py file#
@@ -31,11 +31,11 @@ def main():
         print("Fixed Bio.PDB module.")
     except BaseException:
         print("Problem fixing the Residue.py file. Refer to the instructions and fix it manually!")
-        print("Problem fixing the Residue.py file. Refer to the instructions and fix it manually!", file=log)
+        print("Problem fixing the Residue.py file. Refer to the instructions and fix it manually!", file = log)
     time.sleep(3)
     # Search for __init__.py file from Modeller
     print("Fixing __init__.py and config files from Modeller.")
-    print("Fixing __init__.py and config files from Modeller.", file=log)
+    print("Fixing __init__.py and config files from Modeller.", file = log)
     locations = []
     for root, dir, files in os.walk(environmentloc):
         if "__init__.py" in files:
@@ -56,10 +56,10 @@ def main():
         shutil.copyfile(fixedfile, modreplace)
         os.remove(fixedfile)
         print("__init__ file fixed.")
-        print("__init__ file fixed.", file=log)
+        print("__init__ file fixed.", file = log)
     except BaseException:
         print("Problem fixing the modeller __init__.py file. Refer to the instructions and fix it manually!")
-        print("Problem fixing the modeller __init__.py file. Refer to the instructions and fix it manually!", file=log)
+        print("Problem fixing the modeller __init__.py file. Refer to the instructions and fix it manually!", file = log)
     # Search for config.py file from Modeller
     try:
         license = sys.argv[1]
@@ -95,13 +95,13 @@ def main():
             shutil.copyfile(lic_replace, lic_file)
             os.remove(lic_replace)
             print("Fixed modeller config file.")
-            print("Fixed modeller config file.", file=log)
+            print("Fixed modeller config file.", file = log)
         except BaseException:
             print("Problem entering the modeller license. Refer to the instructions and fix it manually!")
-            print("Problem entering the modeller license. Refer to the instructions and fix it manually!", file=log)
+            print("Problem entering the modeller license. Refer to the instructions and fix it manually!", file = log)
     elif check_config == 2:
         print("Problem finding the config.py file for modeller. Refer to instructions to fix it manually!")
-        print("Problem finding the config.py file for modeller. Refer to instructions to fix it manually!", file=log)
+        print("Problem finding the config.py file for modeller. Refer to instructions to fix it manually!", file = log)
         
 if __name__== "__main__":
     main()
