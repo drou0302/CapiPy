@@ -1,0 +1,9 @@
+python>=3.5
+anaconda
+pip
+modeller
+biopython==1.77
+metapub==0.5.5
+more-itertools==8.4.0
+numpy==1.19.0
+PySimpleGUI == 4.29.0
