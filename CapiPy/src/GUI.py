@@ -6,8 +6,8 @@ import src.BMOD as BMOD
 import src.QUAT as QUAT
 import src.AS_ID as AS_ID
 import src.S2_analysis as S2_analysis
-import CapiPy.ClusterDistance as ClusterDistance
-import CapiPy.Ref_retrieval as Ref_retrieval
+import src.ClusterDistance as ClusterDistance
+import src.Ref_retrieval as Ref_retrieval
 import webbrowser
 import json
 import subprocess
@@ -45,12 +45,12 @@ dir = BMOD.__file__.split('\\')
 currentdir = ''
 i=0
 for p1 in dir:
-    if i<len(dir)-2:
+    if i<len(dir)-3:
         currentdir += p1 + '/'
         i+=1
 
 ex_loc = os.path.realpath(__file__).replace('GUI.py', '')
-settings_file =  ex_loc + 'ncfiles/settings_file.cfg'
+settings_file =  currentdir + 'ncfiles/settings_file.cfg'
 default_settings = {'Pymol_location': pymol_exe ,
                     'Clustalw_location': clustalw_exe,
                     'text_exe': text_exe,
@@ -78,10 +78,13 @@ def main():
         scrpath = os.path.realpath(__file__).split('\\')
     else:
         scrpath = os.path.realpath(__file__).split('/')
+    dir = BMOD.__file__.split('\\')
     imgpath = ''
-    for i in scrpath:
-        if i != 'GUI.py':
-            imgpath += str(i) + '/'
+    i = 0
+    for p1 in dir:
+        if i < len(dir) - 3:
+            imgpath += p1 + '/'
+            i += 1
     img = imgpath + 'ncfiles/CapiPy.png'
     sg.theme(settings['theme'])
 
