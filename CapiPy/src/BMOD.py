@@ -27,33 +27,14 @@ from Bio import BiopythonWarning
 warnings.simplefilter('ignore', BiopythonWarning)
 
 
-def main(folder_answer, folder_name, prot_sequence, blast_response, clustalw_exe):
+def main(folder_name, prot_sequence, blast_response, clustalw_exe):
     initial_location = os.getcwd()
-    """Creation of the working directory"""
-    work_creation = folder_answer
-    if work_creation == "NO":
-        working_directory = folder_name
-        if os.path.exists('./' + working_directory) is True:
-            os.chdir(working_directory)
-            if os.path.exists("Blast&Modeller") is False:
-                os.mkdir("Blast&Modeller")
-                os.chdir("./Blast&Modeller")
-            else:
-                os.chdir("./Blast&Modeller")
-        else:
-            print("Error accessing the folder. Are you sure it exists?")
-            quit()
-            
-    elif work_creation == "YES":
-        working_directory = folder_name
-        if os.path.exists("./" + working_directory) is False:
-            os.mkdir("./" + working_directory)
-            print("Directory ", working_directory, " created.")
-            os.chdir("./" + working_directory)
-        else:
-            os.chdir("./" + working_directory)
-        os.mkdir("Blast&Modeller")
-        os.chdir("./Blast&Modeller")
+    working_directory = folder_name
+    if os.path.exists(folder_name + "/Blast&Modeller") is False:
+        os.mkdir(folder_name + "/Blast&Modeller")
+        os.chdir(folder_name + "/Blast&Modeller")
+    else:
+        os.chdir(folder_name + "/Blast&Modeller")
 
     # Input of the protein sequence
 
@@ -534,4 +515,4 @@ def main(folder_answer, folder_name, prot_sequence, blast_response, clustalw_exe
 
 
 if __name__ == "__main__":
-    main(folder_answer, folder_name, prot_sequence, blast_response)
+    main(folder_name, prot_sequence, blast_response, clustalw_exe)

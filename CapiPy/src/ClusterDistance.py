@@ -24,17 +24,17 @@ warnings.simplefilter('ignore', BiopythonWarning)
 # Locate the workspace#
 
 
-def main(folder_name, residues, file_name):
+def main(folder_name, pdbfile, residues, file_name):
     initial_location = os.getcwd()
     # Locate the workspace#
     working_directory = folder_name
+    print(working_directory)
+    print(working_directory.find('Size&Clusters'))
     try:
-        if os.path.exists(working_directory) is True:
+        if working_directory.find('Size&Clusters') != -1:
             os.chdir(working_directory)
-            if os.path.exists("Size&Clusters") is False:
-                print("You have to have run the third module, Surface and Clusters, before running this one!")
-            else:
-                os.chdir("Size&Clusters")
+        else:
+            print('You have to select the pdb file inside the Surface&Cluster folder!')
     except OSError:
         print("Error accessing the folder. Are you sure it exists?")
 
@@ -42,14 +42,14 @@ def main(folder_name, residues, file_name):
     parser = PDBParser()
     fullid = "Q00F"
     pdbfiles = []
-    fullfile = 'query.pdb'
+    fullfile = pdbfile
     full_structure = parser.get_structure(fullid, fullfile)
     mdel = full_structure[0]
     ppb = PPBuilder()
 
     def uploadcluster():
         # Clusters written back into a Python dictionary to continue execution
-        csv_clusters = csv.reader(open("clusters.csv", "r"))
+        csv_clusters = csv.reader(open(folder_name + "/clusters.csv", "r"))
         i = 0
         keys = [[], [], [], [], [], []]
         values = [[], [], [], [], [], []]

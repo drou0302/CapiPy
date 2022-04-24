@@ -25,28 +25,19 @@ from Bio import BiopythonWarning
 warnings.simplefilter('ignore', BiopythonWarning)
 
 
-def main(folder_answer, folder_name, pdbfile, active_site):
+def main(folder_name, pdbfile, active_site):
     initial_location = os.getcwd()
     # Locate the workspace
     working_directory = folder_name
-    if folder_answer == 'NO':
-        if os.path.exists(working_directory) is True:
-            os.chdir(working_directory)
-            if os.path.exists("Size&Clusters") is False:
-                os.mkdir("Size&Clusters")
-            os.chdir("./Size&Clusters")
-        try:
-            shutil.copy("../Blast&Modeller/" + str(pdbfile), './query.pdb')
-        except BaseException:
-            try:
-                shutil.copy(pdbfile, '.query.pdb')
-            except BaseException:
-                print('Cannot find the pdb file. Check again the name!')
-                quit()
-    elif folder_answer == 'YES':
-        os.mkdir(working_directory)
-        os.chdir(working_directory)
+    if os.path.exists("Size&Clusters") is False:
         os.mkdir("Size&Clusters")
+        os.chdir("./Size&Clusters")
+        try:
+            shutil.copy(pdbfile, './query.pdb')
+        except BaseException:
+            print('Cannot find the pdb file. Check again the name!')
+            quit()
+    else:
         os.chdir("./Size&Clusters")
         try:
             shutil.copy(pdbfile, './query.pdb')

@@ -11,6 +11,7 @@ import os
 import shutil
 import numpy
 import time
+import urllib
 
 from Bio.Blast import NCBIWWW
 from Bio.Blast.Applications import NcbiblastpCommandline
@@ -31,18 +32,16 @@ def main(folder_name, monomeric_model, multimeric_model, clustalw_exe):
     initial_location = os.getcwd()
 # Locate the workspace#
     working_directory = folder_name
+    os.chdir(working_directory)
     try:
-        if os.path.exists(working_directory) is True:
-            os.chdir(working_directory)
-            if os.path.exists("Blast&Modeller") is False:
-                os.mkdir("Blast&Modeller")
-            os.chdir("./Blast&Modeller")
-    except OSError:
-        print("Error accessing the folder. Are you sure it exists?")
+        if os.path.exists('./Quaternary') == False:
+            os.mkdir('./Quaternary')
+        os.chdir('./Quaternary')
+    except OSError as E:
+        print("Error accessing the folder. Are you sure it exists?/n", E)
         quit()
-    protein_sequence = monomeric_model
     try:
-        shutil.copy(protein_sequence, "./monomeric_structure.pdb")
+        shutil.copy(monomeric_model, "./monomeric_structure.pdb")
     except OSError:
         print("Monomeric model not found. Please try to answer again.")
     answer_pdb_id = multimeric_model
@@ -57,14 +56,13 @@ def main(folder_name, monomeric_model, multimeric_model, clustalw_exe):
     else:
         print("That doesn't seem to be an accepted format.")
 
-    pdbl = PDBList()
-    pdbl.retrieve_pdb_file(answer_pdb_id, pdir=".", file_format="pdb")
+    urllib.request.urlretrieve("https://files.rcsb.org/download/" + id_1 + ".pdb1", './' + id_1 + '.pdb')
     parser = PDBParser()
     ppb = PPBuilder()
-    pdbfile = "pdb" + answer_pdb_id + ".ent"
+    pdbfile = id_1 + '.pdb'
     file_name = str(answer_pdb_id.casefold())
     structure = parser.get_structure(answer_pdb_id, pdbfile)
-    env = environ()
+    env = Environ()
 
     def superimpose_chains(dict):    
         checks = {}
@@ -273,7 +271,7 @@ def main(folder_name, monomeric_model, multimeric_model, clustalw_exe):
     if number_of_chains > 1:
         i = 0
         for i in range(number_of_chains):
-            shutil.copyfile("query_monomer.pdb", "query_aligned" + str(i) + ".pdb")
+            shutil.copyfile("monomeric_structure.pdb", "query_aligned" + str(i) + ".pdb")
         # Give the newly created files a chain id.#
         chainid = []
         for chains in structure.get_chains():
@@ -373,14 +371,18 @@ def main(folder_name, monomeric_model, multimeric_model, clustalw_exe):
               + str(working_directory) + " in the Blast&Modeller folder.")
 
     # Clean the directory of intermediate files which are not necessary
-    os.rmdir("obsolete")
+    if os.path.exists(os.getcwd() + '/obsolete') is True:
+        os.rmdir("obsolete")
     try:
         os.rename(pdbfile, 'quat_template.pdb')
     except BaseException as error:
         os.remove('quat_template.pdb')
         os.rename(pdbfile, 'quat_template.pdb')
 
-    keep = ["quaternary_assembly.pdb", "query_multimeric.pdb", "query_monomer.pdb", "blast_result.xml", "quat_template.pdb", "query.fasta", "model.fasta", 'quat_as_' + answer_pdb_id + '.pdb']
+    keep = ["quaternary_assembly.pdb", "query_multimeric.pdb", 
+            "monomeric_structure.pdb", "blast_result.xml", 
+            "quat_template.pdb", "query.fasta", 
+            "model.fasta", 'quat_as_' + answer_pdb_id + '.pdb']
     files = []
     for f in os.listdir("."):
         if os.path.isfile:
@@ -392,5 +394,6 @@ def main(folder_name, monomeric_model, multimeric_model, clustalw_exe):
 
     os.chdir(initial_location)
     
+
 if __name__ == "__main__":
-    main(folder_name, monomeric_model, multimeric_model, clustalw_exe)
+    main(folder_name, monomeric_model, multimeric_model)
