@@ -1,4 +1,7 @@
 # CapiPy
+
+**Now available online at [https://www.capipy.ch ](https://www.capipy.ch)**
+
 ## Table of contents:
 * [Introduction](#introduction)
 * [Technologies](#technologies)
